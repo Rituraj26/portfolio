@@ -1,5 +1,8 @@
 .projects {
 	grid-column: full-start / full-end;
+	padding-bottom: 20rem;
+	background-color: $color-grey-light-1;
+	width: 100%;
 
 	display: grid;
 	grid-template-columns: repeat(3, 35rem);
@@ -35,8 +38,10 @@
 .project {
 
 	&__shape {
+		padding: 2rem;
 		position: relative;
-        overflow: hidden;
+		overflow: hidden;
+		box-shadow: 0px 0px 6px 1px rgba(165, 165, 165, 0.75);
 	}
 
 	&__image {

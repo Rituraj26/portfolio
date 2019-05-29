@@ -1,0 +1,79 @@
+.skills {
+	grid-column: full-start / full-end;
+	padding: 10rem 0;
+	background-color: $color-grey-light-1;
+	width: 100%;
+	
+	display: grid;
+	grid-template-columns: 60vw;
+	justify-content: center;
+	justify-items: center;
+	align-items: center;
+
+	&__list {
+		list-style: none;
+		color: red;
+		width: 100%;
+
+		li {
+			margin: 3rem 0;
+		}
+		
+		&--bar {
+			background-color: $color-grey-light-2;
+			height: 2.8rem;
+			border: 1px solid $color-grey-light-1;
+			display: block;
+
+			span {
+				background-color: $color-primary;
+				float: left;
+				height: 100%;	
+			}
+			.count {
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				font-weight: 100;
+				word-spacing: 1rem;
+				padding-right: 1rem;
+				font-size: 1.6rem;
+				color: $color-grey-dark-1;
+			}
+
+			.html {
+				width: 90%;
+			}
+
+			.css {
+				width: 85%;
+			}
+
+			.sass {
+				width: 75%;
+			}
+
+			.javascript {
+				width: 70%;
+			}
+
+			.react {
+				width: 65%;
+			}
+			
+			.node {
+				width: 60%;
+			}
+
+			.express {
+				width: 60%;
+			}
+
+			.mongodb {
+				width: 50%;
+			}
+		}
+	}
+
+
+}
