@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		
+		<link rel="stylesheet" type="text/css" href="/resources/ionicons.min.css">
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i" rel="stylesheet">
+        <link rel="stylesheet" href="/stylesheets/css/style.css">
+        
+        <title>Health_Kitchen &mdash; There is nothing like staying at your own home.</title>
+    </head>
+    <body class="container">
+
+		<header class="header">
+			<nav>
+				<ul>
+					<li><i class="fas fa-tv"></i></li>
+				</ul>
+				<ul>
+					<li><a href="#about">About</a></li>
+					<li><a href="#procedure">Services</a></li>
+					<li><a href="#cities">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<h1 class="heading-1">Hi I am <br/> Rituraj Dutta<br/><br/><span>Full Stack Web Developer</span></h1>
+			<img class="header__img" src="/resources/img/header_photo.png" alt="header_photo" />
+		</header>
+
+		<section class="about" id="about">
+			<img src="/resources/img/about.png" alt="about_photo" />
+			<h2 class="heading-2">About Me</h2>
+			<p class="about__paragraph">
+				My name is Rituraj Dutta and I am a Web Developer. I began my journey in web development from the online courses. I learned the fundamentals of C, C++, Java in college but i didn't knew what i can create. When i was in 3rd year i somehow came to know that online courses teaches you how we can create applications. From then my web development journey began. Now i have created few applications of my own.
+			</p>
+		</section>
+
+		<section class="services">
+			<h2 class="heading-2 services__title">My Services</h2>
+
+			<div class="service">
+				<i class="fas fa-paint-brush"></i>
+				<h4 class="heading-4">Web Design</h4>
+				<p class="service__paragraph">
+					I design an website based on the requirements for your business. No Wordpress or automation, i create everything from scratch.
+				</p>
+			</div>
+
+			<div class="service">
+				<i class="fas fa-laptop"></i>
+				<h4 class="heading-4">Web Development</h4>
+				<p class="service__paragraph">
+					I develop dynamic full stack application using Nodejs and MongoDB. I also ReactJs for the FrontEnd part.
+				</p>
+			</div>
+
+			<div class="service">
+				<i class="fas fa-mobile-alt"></i>
+				<h4 class="heading-4">Responsive Design</h4>
+				<p class="service__paragraph">
+					Responsiveness is really important in today's modern world as it your websites should look good in all the devices, hence i use CSS Grid for that.
+				</p>
+			</div>
+
+			<div class="service">
+				<i class="fas fa-redo"></i>
+				<h4 class="heading-4">Website Restyling</h4>
+				<p class="service__paragraph">
+					If your website is old and contains bugs then i can redesign your website and fix the bugs. It will help you gain more customers.
+				</p>
+			</div>
+
+			<div class="service">
+				<i class="fas fa-shopping-cart"></i>
+				<h4 class="heading-4">E-Commerce</h4>
+				<p class="service__paragraph">
+					Bring your business online to the millions of users. I can help you build an e-commerce website for your shop.
+				</p>
+			</div>
+
+			<div class="service">
+				<i class="fas fa-tools"></i>
+				<h4 class="heading-4">Maintainence & Support</h4>
+				<p class="service__paragraph">
+					I provide on-going support and maintainence to ensure your website always runs smoothly, as customers satisfaction is my first priority.
+				</p>
+			</div>
+
+		</section>
+
+		<section class="projects">
+
+			<h2 class="heading-2 projects__title">Projects</h2>
+	
+			<figure class="project__shape">
+				<img class="project__image" src="/resources/img/project-1.jpg" alt="project-1" />
+				<figcaption class="project__caption">
+					<h4 class="heading-4 mb-sm">Picureich</h4>
+					<p class="mb-md">Bootstrap, Nodejs, MongoDB</p>
+					<button id="project__btn" class="btn btn-outline">More Info</button>
+				</figcaption>
+				<div class="project__overlay">
+					<div class="project__overlay--container">
+						<figure class="project__overlay--figure">
+							<img class="project__overlay--image pro-1" src="/resources/img/project-1.jpg" alt="project-1" />
+							<img class="project__overlay--image pro-1" src="/resources/img/project-2.jpg" alt="project-2" />
+							<img class="project__overlay--image pro-1" src="/resources/img/project-3.jpg" alt="project-3" />
+							<span class="project__overlay--close">&times;</span>
+							<i id="left" class="fas fa-chevron-left"></i>
+							<i id=right class="fas fa-chevron-right"></i>	
+						</figure>
+						<h4 class="heading-4 project__overlay--header">Pictureich</h4>
+						<hr>
+						<p class="project__overlay--para">It is full stack application which is used to sell pictures.</p>
+					</div>
+				</div>
+			</figure>
+
+			<figure class="project__shape">
+				<img class="project__image" src="/resources/img/project-2.jpg" alt="project-2" />
+				<figcaption class="project__caption">
+					<h4 class="heading-4 mb-sm">Homejone</h4>
+					<p class="mb-md">CSS Grid</p>
+					<button id="project__btn" class="btn btn-outline">More Info</button>
+				</figcaption>
+				<div class="project__overlay">
+					<div class="project__overlay--container">
+						<figure class="project__overlay--figure">
+							<img class="project__overlay--image" src="/resources/img/project-2.jpg" alt="project-5" />
+							<span class="project__overlay--close">&times;</span>	
+						</figure>
+						<h4 class="heading-4 project__overlay--header">Homejone</h4>
+						<hr>
+						<p class="project__overlay--para">It is a landing page for house selling website. I created the layout using CSS Grid. Also i have created a gallery which shows the power of CSS Grid.</p>
+					</div>
+				</div>
+			</figure>
+
+			<figure class="project__shape">
+				<img class="project__image" src="/resources/img/project-3.jpg" alt="project-3" />
+				<figcaption class="project__caption">
+					<h4 class="heading-4 mb-sm">Health Kitchen</h4>
+					<p class="mb-md">CSS Grid</p>
+					<button id="project__btn" class="btn btn-outline">More Info</button>
+				</figcaption>
+				<div class="project__overlay">
+					<div class="project__overlay--container">
+						<figure class="project__overlay--figure">
+							<img class="project__overlay--image" src="/resources/img/project-5.jpg" alt="project-5" />
+							<span class="project__overlay--close">&times;</span>	
+						</figure>
+						<h4 class="heading-4 project__overlay--header">Health Kitchen</h4>
+						<hr>
+						<p class="project__overlay--para">It is a landing page for healthy food and juices selling page. I created this website using CSS Grid and using some transformation property to show some nice transitions.</p>
+					</div>
+				</div>
+			</figure>
+
+			<figure class="project__shape">
+				<img class="project__image" src="/resources/img/project-4.jpg" alt="project-4" />
+				<figcaption class="project__caption">
+					<h4 class="heading-4 mb-sm">GPA Calculator</h4>
+					<p class="mb-md">Reactjs, CSS Grid</p>
+					<button id="project__btn" class="btn btn-outline">More Info</button>
+				</figcaption>
+				<div class="project__overlay">
+					<div class="project__overlay--container">
+						<figure class="project__overlay--figure">
+							<img class="project__overlay--image" src="/resources/img/project-5.jpg" alt="project-5" />
+							<span class="project__overlay--close">&times;</span>	
+						</figure>
+						<h4 class="heading-4 project__overlay--header">GPA Calculator</h4>
+						<hr>
+						<p class="project__overlay--para">GPA Calculator is a react application which calculates the gpa of different students. It has two categories for CSE department and Other category. If you are in CSE department then it will directly display all the subjects but if you are in other departments then it will show you the form where you have enter the credit to calculate it. You can also calculate CGPA by entering the semester GPAs.</p>
+					</div>
+				</div>
+			</figure>
+
+			<figure class="project__shape">
+				<img class="project__image" src="/resources/img/project-5.jpg" alt="project-5" />
+				<figcaption class="project__caption">
+					<h4 class="heading-4 mb-sm">Freddie Mercury Tribute Page</h4>
+					<p class="mb-md">CSS Grid</p>
+					<button id="project__btn" class="btn btn-outline">More Info</button>
+				</figcaption>
+				<div class="project__overlay">
+					<div class="project__overlay--container">
+						<figure class="project__overlay--figure">
+							<img class="project__overlay--image" src="/resources/img/project-5.jpg" alt="project-5" />
+							<span class="project__overlay--close">&times;</span>	
+						</figure>
+						<h4 class="heading-4 project__overlay--header">Freddie Mercury Tribute Page</h4>
+						<hr>
+						<p class="project__overlay--para">It is simple page website which i created to give a tribute to Freddie Mercury. I used CSS Grid to layout the responsiveness.</p>
+					</div>
+				</div>
+			</figure>
+
+			<figure class="project__shape">
+				<img class="project__image" src="/resources/img/project-6.jpg" alt="project-6" />
+				<figcaption class="project__caption">
+					<h4 class="heading-4 mb-sm">Video Player</h4>
+					<p class="mb-md">ReactJs, CSS Grid</p>
+					<button id="project__btn" class="btn btn-outline">More Info</button>
+				</figcaption>
+				<div class="project__overlay">
+					<div class="project__overlay--container">
+						<figure class="project__overlay--figure">
+							<img class="project__overlay--image" src="/resources/img/project-5.jpg" alt="project-5" />
+							<span class="project__overlay--close">&times;</span>	
+						</figure>
+						<h4 class="heading-4 project__overlay--header">Video Player</h4>
+						<hr>
+						<p class="project__overlay--para">Video Player is a react application where you can search for any term and based on the search term it will display different results and you can select any result to play a video. It uses youtube api to get the results.</p>
+					</div>
+				</div>
+			</figure>
+
+		</section>
+
+		<section class="contact">
+			<h2 class="heading-2">Contact</h2>
+			<ul>
+				<li><a href="https://www.instagram.com/rituraj265/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://twitter.com/rituraj265" target="_blank"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/rituraj-dutta-7619a2181/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+				<li><a href="" target="_blank"><i class="far fa-envelope"></i></a></li>				
+			</ul>
+		</section>
+
+		<section class="credit">
+
+			<div class="credit__images">
+				<h4 class="heading-4">Images</h4>
+				<p class="credit__para">All the images used in the website are <span>from unsplash.com</span></p>
+				
+				<a href="https://unsplash.com/@seabas?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank"><i class="fas fa-external-link-alt"></i>Sebastian Staines</a>
+				<a href="https://unsplash.com/@seabas?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank"><i class="fas fa-external-link-alt"></i>Sebastian Staines</a>
+				<a href="https://unsplash.com/@wesual?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank"><i class="fas fa-external-link-alt"></i>Wesual Click</a>
+				<a href="https://unsplash.com/@cortes?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank"><i class="fas fa-external-link-alt"></i>Dennis Cortés</a>
+				<a href="https://unsplash.com/@antisocia1?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank"><i class="fas fa-external-link-alt"></i>Greg Ortega</a>
+				<a href="https://unsplash.com/@conkarampelas?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank"><i class="fas fa-external-link-alt"></i>Con Karampelas</a>
+
+			</div>
+
+			<div class="credit__vectors">
+				<h4 class="heading-4">Vectors</h4>
+				<p class="credit__para">All the vectors used in the website are <span>from freepik.com</span></p>
+				<a href="https://www.freepik.com/free-photos-vectors/technology" target="_blank"><i class="fas fa-external-link-alt"></i>Header vector</a>
+				<a href="https://www.freepik.com/free-photos-vectors/business" target="_blank"><i class="fas fa-external-link-alt"></i>About vector</a>
+			</div>
+
+			<div class="credit__icons">
+				<h4 class="heading-4">Icons</h4>
+				<p class="credit__para">All the icons used in the website are<span>from fontawesome.com</span></p>
+			</div>
+
+		</section>
+
+		<footer class="footer">
+			<p>&copy; Copyright 2019 by Rituraj Dutta</p>
+		</footer>
+
+
+		<script src="/js/index.js"></script>
+    </body>
+</html>

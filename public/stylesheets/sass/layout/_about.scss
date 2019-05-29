@@ -1,0 +1,23 @@
+.about {
+	grid-column: center-start / center-end;
+	margin: 15rem 0;
+
+	display: grid;
+	grid-template-columns: repeat(2, minmax(10rem, 60rem));
+	grid-template-rows: repeat(2, max-content);
+	grid-column-gap: 10rem;
+	justify-items: center;
+	align-items: center;
+
+	img {
+		grid-row: 1 / -1;
+		width: 100%;
+		height: 100%;
+	}
+
+	&__paragraph {
+		font-size: 2rem;
+		color: $color-secondary;
+		text-align: center;
+	}
+}
