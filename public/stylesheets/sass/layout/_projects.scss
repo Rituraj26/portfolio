@@ -107,28 +107,14 @@
 
 		&--figure {
 			position: relative;
-			
-			i {
-				font-size: 1.5rem;
-				border: 2px solid blue;
-				padding: 2rem;
-				position: absolute;
-				top: 50%;
-			}
-
-			i:last-child {
-				position: absolute;
-				right: 0rem;
-			}
 		}
 
 		&--image {
 			width: 100%;
-			height: auto;
 		}
 
 		&--close {
-			color: #ccc;
+			color: $color-grey-light-1;
 			position: absolute;
 			right: .9rem;
 			top: .1rem;
@@ -137,7 +123,7 @@
 		  
 		&--close:hover,
 		&--close:focus {
-			color: #000;
+			color: $color-secondary;
 			text-decoration: none;
 			cursor: pointer;
 		}

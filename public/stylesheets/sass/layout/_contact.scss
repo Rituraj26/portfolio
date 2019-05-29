@@ -1,9 +1,13 @@
 .contact {
 	grid-column: full-start / full-end;
-	margin: 25rem 0;
+	margin-top: 20rem;
+	background-color: $color-grey-light-2;
+	width: 100%;
+	padding: 25rem;
 
 	display: grid;
 	grid-row-gap: 5rem;
+	justify-content: center;
 
 	ul {
 		list-style: none;
