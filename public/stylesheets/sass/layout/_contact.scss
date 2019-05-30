@@ -6,13 +6,13 @@
 	display: grid;
 	grid-row-gap: 5rem;
 	justify-content: center;
+	justify-items: center;
 
 	ul {
 		list-style: none;
-		display: flex;
-		-ms-flex-direction: row;
-		flex-direction: row;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: repeat(4, min-content);
+		grid-gap: 3rem;
 	}
 
 	a:link, a:visited {

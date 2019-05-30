@@ -31,13 +31,14 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<h1 class="heading-1">Hi I am <br/> Rituraj Dutta<br/><br/><span>Full Stack Web Developer</span></h1>
+			<h1 class="heading-1 header__content">Hi I am <br/> Rituraj Dutta<br/><br/><span>Full Stack Web Developer</span></h1>
 			<img class="header__img" src="/resources/img/header_photo.png" alt="header_photo" />
 		</header>
 
 		<section class="about" id="about">
 			<img src="/resources/img/about.png" alt="about_photo" />
-			<h2 class="heading-2 about__title">About Me</h2>
+			<h2 class="heading-2 title">About Me</h2>
+			<div class="underline">&mdash;</div>
 			<p class="about__paragraph">
 				My name is Rituraj Dutta and I am a Web Developer.<br>I began my journey in web development from the online courses.<br>I learned the fundamentals of C, C++, Java in college but i didn't knew what i can create.<br>When i was in 3rd year i somehow came to know that online courses teaches you how we can create applications. From then my web development journey began.<br>Now i have created few applications of my own.
 			</p>
@@ -45,10 +46,11 @@
 
 		<section class="skills" id="skills">
 
-			<h2 class="heading-2 mb-hg">My Skills</h2>
+			<h2 class="heading-2 title">My Skills</h2>
+			<div class="underline">&mdash;</div>
 
-			<ul class="skills__list">
-				<li>
+			<ul class="skills__list list-1">
+				<li class="skills__list--li">
 					<h4 class="heading-4">HTML5</h4>
 					<span class="skills__list--bar">
 						<span class="html">
@@ -59,7 +61,7 @@
 						</em>
 					</span>
 				</li>
-				<li>
+				<li class="skills__list--li">
 					<h4 class="heading-4">CSS3</h4>
 					<span class="skills__list--bar">
 						<span class="css">
@@ -70,7 +72,7 @@
 						</em>
 					</span>
 				</li>
-				<li>
+				<li class="skills__list--li">
 					<h4 class="heading-4">SASS</h4>
 					<span class="skills__list--bar">
 						<span class="sass">
@@ -81,7 +83,7 @@
 						</em>
 					</span>
 				</li>
-				<li>
+				<li class="skills__list--li">
 					<h4 class="heading-4">Javascript</h4>
 					<span class="skills__list--bar">
 						<span class="javascript">
@@ -92,7 +94,7 @@
 						</em>
 					</span>
 				</li>
-				<li>
+				<li class="skills__list--li">
 					<h4 class="heading-4">ReactJs</h4>
 					<span class="skills__list--bar">
 						<span class="react">
@@ -103,7 +105,10 @@
 						</em>
 					</span>
 				</li>
-				<li>
+			</ul>
+
+			<ul class="skills__list list-2">
+				<li class="skills__list--li">
 					<h4 class="heading-4">NodeJs</h4>
 					<span class="skills__list--bar">
 						<span class="node">
@@ -114,7 +119,7 @@
 						</em>
 					</span>
 				</li>
-				<li>
+				<li class="skills__list--li">
 					<h4 class="heading-4">Express</h4>
 					<span class="skills__list--bar">
 						<span class="express">
@@ -125,7 +130,7 @@
 						</em>
 					</span>
 				</li>
-				<li>
+				<li class="skills__list--li">
 					<h4 class="heading-4">MongoDB</h4>
 					<span class="skills__list--bar">
 						<span class="mongodb">
@@ -141,7 +146,8 @@
 		</section>
 
 		<section class="services" id="services">
-			<h2 class="heading-2 services__title">My Services</h2>
+			<h2 class="heading-2 title">My Services</h2>
+			<div class="underline">&mdash;</div>
 
 			<div class="service">
 				<i class="fas fa-paint-brush"></i>
@@ -195,7 +201,8 @@
 
 		<section class="projects" id="projects">
 
-			<h2 class="heading-2 projects__title">Projects</h2>
+			<h2 class="heading-2 title">Projects</h2>
+			<div class="underline">&mdash;</div>
 	
 			<figure class="project__shape">
 				<img class="project__image" src="/resources/img/project-1.jpg" alt="project-1" />
@@ -209,6 +216,8 @@
 						<figure class="project__overlay--figure">
 							<img class="project__overlay--image" src="/resources/img/project-1.jpg" alt="project-1" />
 							<span class="project__overlay--close">&times;</span>
+							<i class="fas fa-chevron-left" id="left"></i>
+							<i class="fas fa-chevron-right" id="right"></i>
 						</figure>
 						<h4 class="heading-4 project__overlay--header">Pictureich</h4>
 						<hr>
@@ -228,7 +237,9 @@
 					<div class="project__overlay--container">
 						<figure class="project__overlay--figure">
 							<img class="project__overlay--image" src="/resources/img/project-2.jpg" alt="project-5" />
-							<span class="project__overlay--close">&times;</span>	
+							<span class="project__overlay--close">&times;</span>
+							<i class="fas fa-chevron-left" id="left"></i>
+							<i class="fas fa-chevron-right" id="right"></i>
 						</figure>
 						<h4 class="heading-4 project__overlay--header">Homejone</h4>
 						<hr>
@@ -248,7 +259,9 @@
 					<div class="project__overlay--container">
 						<figure class="project__overlay--figure">
 							<img class="project__overlay--image" src="/resources/img/project-3.jpg" alt="project-3" />
-							<span class="project__overlay--close">&times;</span>	
+							<span class="project__overlay--close">&times;</span>
+							<i class="fas fa-chevron-left" id="left"></i>
+							<i class="fas fa-chevron-right" id="right"></i>
 						</figure>
 						<h4 class="heading-4 project__overlay--header">Health Kitchen</h4>
 						<hr>
@@ -268,7 +281,9 @@
 					<div class="project__overlay--container">
 						<figure class="project__overlay--figure">
 							<img class="project__overlay--image" src="/resources/img/project-4.jpg" alt="project-4" />
-							<span class="project__overlay--close">&times;</span>	
+							<span class="project__overlay--close">&times;</span>
+							<i class="fas fa-chevron-left" id="left"></i>
+							<i class="fas fa-chevron-right" id="right"></i>
 						</figure>
 						<h4 class="heading-4 project__overlay--header">GPA Calculator</h4>
 						<hr>
@@ -288,7 +303,9 @@
 					<div class="project__overlay--container">
 						<figure class="project__overlay--figure">
 							<img class="project__overlay--image" src="/resources/img/project-5.jpg" alt="project-5" />
-							<span class="project__overlay--close">&times;</span>	
+							<span class="project__overlay--close">&times;</span>
+							<i class="fas fa-chevron-left" id="left"></i>
+							<i class="fas fa-chevron-right" id="right"></i>	
 						</figure>
 						<h4 class="heading-4 project__overlay--header">Freddie Mercury Tribute Page</h4>
 						<hr>
@@ -308,7 +325,9 @@
 					<div class="project__overlay--container">
 						<figure class="project__overlay--figure">
 							<img class="project__overlay--image" src="/resources/img/project-6.jpg" alt="project-6" />
-							<span class="project__overlay--close">&times;</span>	
+							<span class="project__overlay--close">&times;</span>
+							<i class="fas fa-chevron-left" id="left"></i>
+							<i class="fas fa-chevron-right" id="right"></i>
 						</figure>
 						<h4 class="heading-4 project__overlay--header">Video Player</h4>
 						<hr>
@@ -320,7 +339,8 @@
 		</section>
 
 		<section class="contact" id="contact">
-			<h2 class="heading-2">Contact</h2>
+			<h2 class="heading-2 title">Contact</h2>
+			<div class="underline">&mdash;</div>
 			<ul>
 				<li><a href="https://www.instagram.com/rituraj265/" target="_blank"><i class="fab fa-instagram"></i></a></li>
 				<li><a href="https://twitter.com/rituraj265" target="_blank"><i class="fab fa-twitter"></i></a></li>
@@ -368,9 +388,6 @@
 			crossorigin="anonymous"
 		>
 		</script>
-		<script>
-			ScrollReveal().reveal('navbar', {duration: 2000, origin: 'buttom'})
-		</script> -->
 		
 
 		<script src="/js/animation.js"></script>
