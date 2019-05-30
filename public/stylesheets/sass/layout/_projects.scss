@@ -93,19 +93,19 @@
 		overflow: auto;
 		background-color: rgba(0, 0, 0, 0.5);
 
-		i {
-			font-size: 3rem;
-			font-weight: 100;
-			border: 1px solid $color-grey-light-1;
-			position: absolute;
-			top: 50%;
-		}
-		i:first-child {
-			left: 1rem;
-		}
-		i:last-child {
-			right: 1rem;
-		}
+		// i {
+		// 	font-size: 3rem;
+		// 	font-weight: 100;
+		// 	border: 1px solid $color-grey-light-1;
+		// 	position: absolute;
+		// 	top: 50%;
+		// }
+		// i:first-child {
+		// 	left: 1rem;
+		// }
+		// i:last-child {
+		// 	right: 1rem;
+		// }
 
 		&--container {
 			margin: 5% auto;

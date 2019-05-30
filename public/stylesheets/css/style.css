@@ -349,16 +349,6 @@ body {
   width: 100%;
   overflow: auto;
   background-color: rgba(0, 0, 0, 0.5); }
-  .project__overlay i {
-    font-size: 3rem;
-    font-weight: 100;
-    border: 1px solid #f9f7f6;
-    position: absolute;
-    top: 50%; }
-  .project__overlay i:first-child {
-    left: 1rem; }
-  .project__overlay i:last-child {
-    right: 1rem; }
   .project__overlay--container {
     margin: 5% auto;
     background-color: #fff;
