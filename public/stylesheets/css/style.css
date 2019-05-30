@@ -201,16 +201,17 @@ body {
 
 .header {
   grid-column: full-start / full-end;
-  padding: 0 10rem;
   background-image: url(../../resources/img/background.jpg);
   background-size: cover;
+  width: 100%;
+  height: 100%;
   margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(10rem, 60rem));
+  grid-template-columns: repeat(2, 40vw);
   grid-template-rows: min-content max-content;
-  grid-column-gap: 10rem;
   grid-row-gap: 18rem;
-  justify-items: start;
+  justify-content: center;
+  justify-items: center;
   align-items: center; }
   .header .navbar {
     grid-column: 1 / -1;
@@ -250,8 +251,8 @@ body {
     color: #f9f7f6;
     font-size: 2.5rem; }
   .header__img {
-    width: 50rem;
-    height: 50rem; }
+    width: 20vw;
+    height: 20vw; }
 
 .about {
   grid-column: center-start / center-end;

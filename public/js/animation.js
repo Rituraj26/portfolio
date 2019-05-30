@@ -51,7 +51,7 @@ sr.reveal(contactList, {
 skills.addEventListener('mouseover', () => {
 
 	for(let i = 0; i < skillsClass.length; i++) {
-		skillsSelector[i].style.animation = `${skillsClass[i]} 3s linear 0s forwards`;
+		skillsSelector[i].style.animation = `${skillsClass[i]} 2s linear 0s forwards`;
 	}
 
 });
