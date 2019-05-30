@@ -4,10 +4,22 @@ const title = document.querySelectorAll('.title');
 const underline = document.querySelectorAll('.underline');
 const aboutImg = document.querySelector('.about__image');
 const aboutPara = document.querySelector('.about__paragraph');
-const skillsList = document.querySelector('.skills__list--bar');
+const skills = document.querySelector('.skills');
+const html = document.querySelector('.html');
+const css = document.querySelector('.css');
+const sass = document.querySelector('.sass');
+const js = document.querySelector('.javascript');
+const react = document.querySelector('.react');
+const node = document.querySelector('.node');
+const express = document.querySelector('.express');
+const mongodb = document.querySelector('.mongodb');
 const service = document.querySelectorAll('.service');
 const projectShape = document.querySelectorAll('.project__shape');
 const contactList = document.querySelector('.contact__list');
+
+
+const skillsClass = ['htmlProg', 'cssProg', 'sassProg', 'jsProg', 'reactProg', 'nodeProg', 'expressProg', 'mongodbProg'];
+const skillsSelector = [html, css, sass, js, react, node, express, mongodb];
 
 window.sr = ScrollReveal();
 
@@ -35,14 +47,16 @@ sr.reveal(contactList, {
 	origin: 'bottom'
 });
 
-// sr.reveal(aboutPara, {
-// 	duration: 2000,
-// 	origin: 'right',
-// 	distance: '6rem'
-// });
 
+skills.addEventListener('mouseover', () => {
 
-// skillsList.classList.add('Skill');
+	for(let i = 0; i < skillsClass.length; i++) {
+		skillsSelector[i].style.animation = `${skillsClass[i]} 3s linear 0s forwards`;
+	}
+
+});
+
+// 
 
 for(let i = 0; i < title.length; i++) {
 	sr.reveal(title[i], {
@@ -67,7 +81,6 @@ for(let i = 0; i < service.length; i++) {
 	sr.reveal(projectShape[i], {
 		duration: 4000,
 		origin: 'bottom',
-		distance: '30rem'
 	});
 }
 

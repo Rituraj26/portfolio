@@ -6,6 +6,44 @@ const closeBtn = document.querySelectorAll('.project__overlay--close');
 // const leftArrow = document.querySelector('#left');
 // const rightArrow = document.querySelector('#right');
 
+
+
+// Events
+
+// leftArrow.addEventListener('click', (e) => changeImageLeft(e));
+// rightArrow.addEventListener('click', (e) => changeImageRight(e));
+for(let i = 0; i < modalBtn.length; i++) {
+	// console.log(images[i]);
+	modalBtn[i].addEventListener('click', () => openModal(modal[i]));
+	closeBtn[i].addEventListener('click', () => closeModal(modal[i]));
+	window.addEventListener('click', (e) => outsideClick(e, modal[i]));
+}
+
+// Open
+openModal = (m) => {
+	// console.log(current, m);
+	// reset();
+	// startSlide();
+  	m.style.display = 'block';
+}
+
+// Close
+closeModal = (m) => {
+	m.style.display = 'none';
+	// reset();
+}
+
+// Close If Outside Click
+outsideClick = (e, m) => {
+	if (e.target == m) {
+		m.style.display = 'none';
+		// reset();
+	}
+}
+
+
+
+
 // let current = 0;
 
 // // clear all images
@@ -51,35 +89,3 @@ const closeBtn = document.querySelectorAll('.project__overlay--close');
 // 	slideRight();
 // }
 
-// // Events
-
-// leftArrow.addEventListener('click', (e) => changeImageLeft(e));
-// rightArrow.addEventListener('click', (e) => changeImageRight(e));
-for(let i = 0; i < modalBtn.length; i++) {
-	// console.log(images[i]);
-	modalBtn[i].addEventListener('click', () => openModal(modal[i]));
-	closeBtn[i].addEventListener('click', () => closeModal(modal[i]));
-	window.addEventListener('click', (e) => outsideClick(e, modal[i]));
-}
-
-// Open
-openModal = (m) => {
-	// console.log(current, m);
-	// reset();
-	// startSlide();
-  	m.style.display = 'block';
-}
-
-// Close
-closeModal = (m) => {
-	m.style.display = 'none';
-	// reset();
-}
-
-// Close If Outside Click
-outsideClick = (e, m) => {
-	if (e.target == m) {
-		m.style.display = 'none';
-		// reset();
-	}
-}

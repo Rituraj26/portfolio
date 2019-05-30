@@ -40,6 +40,7 @@
 				background-color: $color-primary;
 				float: left;
 				height: 100%;	
+				transition: 2s;
 				// animation: Skill 3s linear 1s forwards;
 			}
 			.count {
@@ -54,35 +55,35 @@
 			}
 
 			.html {
-				width: 90%;
+				width: 0%;
 			}
 
 			.css {
-				width: 85%;
+				width: 0%;
 			}
 
 			.sass {
-				width: 75%;
+				width: 0%;
 			}
 
 			.javascript {
-				width: 70%;
+				width: 0%;
 			}
 
 			.react {
-				width: 65%;
+				width: 0%;
 			}
 			
 			.node {
-				width: 60%;
+				width: 0%;
 			}
 
 			.express {
-				width: 60%;
+				width: 0%;
 			}
 
 			.mongodb {
-				width: 50%;
+				width: 0%;
 			}
 		}
 	}

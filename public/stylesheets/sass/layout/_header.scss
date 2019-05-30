@@ -42,10 +42,10 @@
 				color: $color-secondary;
 				font-size: 1.5rem;
 				text-transform: uppercase;
-				transition: .2s;
+				transition: .1s;
 			}
 			a:hover, a:active {
-				border-bottom: 1.6px solid $color-primary;
+				border-bottom: .1rem solid $color-primary;
 			}
 
 			li:nth-child(1) {
