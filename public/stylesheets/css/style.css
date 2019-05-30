@@ -126,37 +126,37 @@ body {
   grid-row-gap: 18rem;
   justify-items: start;
   align-items: center; }
-  .header nav {
+  .header .navbar {
     grid-column: 1 / -1;
     width: 100%;
     margin-top: 3.5rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
-    .header nav ul {
+    .header .navbar ul {
       list-style: none; }
-    .header nav ul:last-child {
+    .header .navbar ul:last-child {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-column-gap: 2rem;
       align-items: center;
       justify-items: center; }
-      .header nav ul:last-child li:first-child a {
+      .header .navbar ul:last-child li:first-child a {
         color: #f9f7f6; }
-      .header nav ul:last-child a:link, .header nav ul:last-child a:visited {
+      .header .navbar ul:last-child a:link, .header .navbar ul:last-child a:visited {
         text-decoration: none;
         color: #10442f;
         font-size: 1.5rem;
         text-transform: uppercase;
         transition: .2s; }
-      .header nav ul:last-child a:hover, .header nav ul:last-child a:active {
+      .header .navbar ul:last-child a:hover, .header .navbar ul:last-child a:active {
         border-bottom: 1.6px solid #0886ad; }
-      .header nav ul:last-child li:nth-child(1) {
+      .header .navbar ul:last-child li:nth-child(1) {
         grid-column: 1 / span 1; }
-      .header nav ul:last-child li:nth-child(2) {
+      .header .navbar ul:last-child li:nth-child(2) {
         grid-column: 2 / span 1; }
-      .header nav ul:last-child li:nth-child(3) {
+      .header .navbar ul:last-child li:nth-child(3) {
         grid-column: 3 / span 1; }
-      .header nav ul:last-child li:nth-child(4) {
+      .header .navbar ul:last-child li:nth-child(4) {
         grid-column: 4 / span 1; }
   .header span {
     font-size: 3.5rem; }
@@ -177,7 +177,7 @@ body {
   grid-row-gap: 4rem;
   justify-items: center;
   align-items: center; }
-  .about img {
+  .about__image {
     width: 42rem;
     height: 53rem; }
   .about__paragraph {
@@ -390,7 +390,7 @@ body {
   grid-row-gap: 5rem;
   justify-content: center;
   justify-items: center; }
-  .contact ul {
+  .contact__list {
     list-style: none;
     display: grid;
     grid-template-columns: repeat(4, min-content);
