@@ -23,23 +23,22 @@ sr.reveal(headerContent, {
 sr.reveal(aboutImg, {
 	duration: 2000,
 	origin: 'left',
-	distance: '50rem'
+	distance: '6rem'
 });
 sr.reveal(aboutPara, {
 	duration: 2000,
 	origin: 'right',
-	distance: '50rem'
+	distance: '6rem'
 });
 sr.reveal(contactList, {
 	duration: 4000,
 	origin: 'bottom'
-	// distance: '50rem'
 });
 
 // sr.reveal(aboutPara, {
 // 	duration: 2000,
 // 	origin: 'right',
-// 	distance: '50rem'
+// 	distance: '6rem'
 // });
 
 
@@ -49,26 +48,26 @@ for(let i = 0; i < title.length; i++) {
 	sr.reveal(title[i], {
 		duration: 1000,
 		origin: 'left',
-		distance: '50rem'
+		distance: '6rem'
 	});
 	sr.reveal(underline[i], {
 		delay: 500,
 		duration: 1000,
 		origin: 'left',
-		distance: '50rem'
+		distance: '6rem'
 	});
 }
 
 for(let i = 0; i < service.length; i++) {
 	sr.reveal(service[i], {
-		duration: 2000,
+		duration: 4000,
 		origin: 'bottom',
-		distance: '50rem'
+		distance: '30rem'
 	});
 	sr.reveal(projectShape[i], {
-		duration: 2000,
+		duration: 4000,
 		origin: 'bottom',
-		distance: '50rem'
+		distance: '30rem'
 	});
 }
 
