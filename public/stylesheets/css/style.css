@@ -97,6 +97,12 @@ html {
   @media only screen and (max-width: 75em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 45%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 37%; } }
 
 body {
   font-family: "Nunito", sans-serif;
@@ -106,16 +112,9 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 100vh min-content repeat(7, min-content);
+  grid-template-rows: 100vh repeat(7, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(10, [col-start] minmax(min-content, 12rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   justify-items: center; }
-  @media only screen and (max-width: 62.5em) {
-    .container {
-      grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
-      grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; } }
-  @media only screen and (max-width: 50em) {
-    .container {
-      grid-template-rows: 6rem calc(100vh - 6rem); } }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
   font-family: "Josefin Sans", sans-serif;
@@ -174,6 +173,21 @@ body {
     background-color: #0b6575;
     color: #fff; }
 
+.link:link, .link:visited {
+  background-color: transparent;
+  color: #10442f;
+  font-family: "Josefin Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 1.3rem 2rem;
+  border: 1px solid #53483c;
+  text-decoration: none;
+  transition: .2s; }
+
+.link:hover, .link:active {
+  background-color: #10442f;
+  color: #f9f7f6; }
+
 .underline {
   line-height: .3rem;
   background-color: #e67e22;
@@ -203,13 +217,11 @@ body {
   grid-column: full-start / full-end;
   background-image: url(../../resources/img/background.jpg);
   background-size: cover;
+  background-position: center;
   width: 100%;
-  height: 100%;
-  margin: 0;
   display: grid;
-  grid-template-columns: repeat(2, 40vw);
-  grid-template-rows: min-content max-content;
-  grid-row-gap: 18rem;
+  grid-template-columns: max-content;
+  grid-template-rows: 10vh 90vh;
   justify-content: center;
   justify-items: center;
   align-items: center; }
@@ -227,8 +239,6 @@ body {
       grid-column-gap: 2rem;
       align-items: center;
       justify-items: center; }
-      .header .navbar ul:last-child li:first-child a {
-        color: #f9f7f6; }
       .header .navbar ul:last-child a:link, .header .navbar ul:last-child a:visited {
         text-decoration: none;
         color: #10442f;
@@ -245,18 +255,17 @@ body {
         grid-column: 3 / span 1; }
       .header .navbar ul:last-child li:nth-child(4) {
         grid-column: 4 / span 1; }
+  .header__content {
+    color: #10442f; }
   .header span {
     font-size: 3.5rem; }
   .header i {
-    color: #f9f7f6;
-    font-size: 2.5rem; }
-  .header__img {
-    width: 20vw;
-    height: 20vw; }
+    color: #10442f;
+    font-size: 3.5rem; }
 
 .about {
   grid-column: center-start / center-end;
-  padding: 15rem 10rem 15rem 0;
+  padding: 15rem 0;
   display: grid;
   grid-template-columns: 30vw 50vw;
   grid-template-rows: repeat(3, min-content);
@@ -264,12 +273,17 @@ body {
   grid-row-gap: 4rem;
   justify-items: center;
   align-items: center; }
+  @media only screen and (max-width: 50em) {
+    .about {
+      grid-template-columns: 70vw;
+      text-align: center; } }
   .about__image {
     width: 42rem;
     height: 53rem; }
   .about__paragraph {
     font-size: 2rem;
-    color: #10442f; }
+    color: #10442f;
+    line-height: 5rem; }
 
 .skills {
   grid-column: full-start / full-end;
@@ -277,17 +291,30 @@ body {
   background-color: #f9f7f6;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 40vw);
+  grid-template-columns: repeat(2, 37vw);
   grid-template-rows: repeat(2, min-content) max-content;
   grid-gap: 5rem;
   justify-content: center;
   justify-items: center; }
+  @media only screen and (max-width: 50em) {
+    .skills {
+      grid-template-columns: 70vw; } }
+  @media only screen and (max-width: 28.125em) {
+    .skills {
+      grid-template-columns: 90vw; } }
   .skills .list-1 {
     grid-row: 3 / span 1;
     grid-column: 1 / span 1; }
+    @media only screen and (max-width: 50em) {
+      .skills .list-1 {
+        grid-column: 1 / -1; } }
   .skills .list-2 {
     grid-row: 3 / span 1;
     grid-column: 2 / span 1; }
+    @media only screen and (max-width: 50em) {
+      .skills .list-2 {
+        grid-column: 1 / -1;
+        grid-row: 4 / -1; } }
   .skills__list {
     list-style: none;
     color: red;
@@ -332,14 +359,18 @@ body {
 
 .services {
   grid-column: full-start / full-end;
-  padding: 15rem;
+  padding: 15rem 0;
   display: grid;
-  grid-template-columns: repeat(3, minmax(25rem, max-content));
+  grid-template-columns: repeat(3, 25vw);
   grid-template-rows: repeat(4, min-content);
-  grid-row-gap: 6rem;
-  grid-column-gap: 7rem;
   justify-content: center;
   justify-items: center; }
+  @media only screen and (max-width: 50em) {
+    .services {
+      grid-template-columns: repeat(2, 35vw); } }
+  @media only screen and (max-width: 28.125em) {
+    .services {
+      grid-template-columns: repeat(2, 47vw); } }
   .services__para {
     grid-column: 1 / span 4;
     font-size: 2rem; }
@@ -353,10 +384,9 @@ body {
 .service {
   display: grid;
   grid-row-gap: 1.8rem;
-  box-shadow: -35px 67px 98px -71px #9ef2eb;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 0px 0px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 3rem;
-  border: 0.3px solid #d4f8f5;
   transition: all .2s; }
   .service i {
     font-size: 5rem;
@@ -364,20 +394,23 @@ body {
   .service__paragraph {
     font-size: 1.7rem; }
 
-.service:hover {
-  box-shadow: -16px 96px 144px -35px #9ef2eb; }
-
 .projects {
   grid-column: full-start / full-end;
   padding: 20rem 0;
   background-color: #f9f7f6;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 35rem);
+  grid-template-columns: repeat(3, 25vw);
   grid-template-rows: repeat(2, min-content) repeat(2, 35rem);
-  grid-gap: 6rem;
   justify-content: center;
   justify-items: center; }
+  @media only screen and (max-width: 50em) {
+    .projects {
+      grid-template-columns: repeat(2, 40vw);
+      grid-template-rows: repeat(2, min-content) repeat(2, 35rem); } }
+  @media only screen and (max-width: 28.125em) {
+    .projects {
+      grid-template-columns: repeat(2, 47vw); } }
   .projects__para {
     grid-column: 1 / span 4;
     font-size: 2rem; }
@@ -392,7 +425,7 @@ body {
   padding: 2rem;
   position: relative;
   overflow: hidden;
-  box-shadow: 0px 0px 6px 1px rgba(165, 165, 165, 0.75); }
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 0px 0px rgba(0, 0, 0, 0.1); }
 
 .project__image {
   width: 100%;
@@ -442,7 +475,7 @@ body {
     background-color: #fff;
     padding: 2rem;
     width: 50%;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     animation-name: modalopen;
     animation-duration: 1s;
     display: grid;
@@ -461,6 +494,13 @@ body {
     color: #10442f;
     text-decoration: none;
     cursor: pointer; }
+  .project__overlay--header {
+    display: flex;
+    align-items: center; }
+    .project__overlay--header h4 {
+      flex-grow: 1; }
+    .project__overlay--header a:last-child {
+      margin-left: 2rem; }
   .project__overlay--para {
     font-size: 1.7rem; }
 
@@ -473,11 +513,14 @@ body {
 .contact {
   grid-column: full-start / full-end;
   width: 100%;
-  padding: 25rem;
+  padding: 25rem 0;
   display: grid;
   grid-row-gap: 5rem;
   justify-content: center;
   justify-items: center; }
+  @media only screen and (max-width: 28.125em) {
+    .contact {
+      padding: 10rem 0; } }
   .contact__list {
     list-style: none;
     display: grid;
@@ -495,11 +538,14 @@ body {
   grid-column: full-start / full-end;
   background-color: #1c1c1c;
   width: 100%;
-  padding: 10rem 0;
+  padding: 10rem 3rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 5rem;
   justify-items: center; }
+  @media only screen and (max-width: 37.5em) {
+    .credit {
+      display: none; } }
   .credit div {
     display: grid;
     grid-row-gap: 3rem;
@@ -523,7 +569,7 @@ body {
 .footer {
   grid-column: full-start / full-end;
   background-color: black;
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   width: 100%;
   box-shadow: -1px -7px 1px -3px rgba(0, 0, 0, 0.75); }
   .footer p {

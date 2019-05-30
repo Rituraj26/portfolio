@@ -5,20 +5,36 @@
 	width: 100%;
 	
 	display: grid;
-	grid-template-columns: repeat(2, 40vw);
+	grid-template-columns: repeat(2, 37vw);
 	grid-template-rows: repeat(2, min-content) max-content;
 	grid-gap: 5rem;
 	justify-content: center;
 	justify-items: center;
 	// align-items: center;
 
+	@media only screen and (max-width: $bp-medium) {
+		grid-template-columns: 70vw;
+	}
+	@media only screen and (max-width: $bp-smallest) {
+		grid-template-columns: 90vw;
+	}
+
 	.list-1 {
 		grid-row: 3 / span 1;
 		grid-column: 1 / span 1;
+
+		@media only screen and (max-width: $bp-medium) {
+			grid-column: 1 / -1;
+		}
 	}
 	.list-2 {
 		grid-row: 3 / span 1;
 		grid-column: 2 / span 1;
+
+		@media only screen and (max-width: $bp-medium) {
+			grid-column: 1 / -1;
+			grid-row: 4 / -1;
+		}
 	}
 
 	&__list {

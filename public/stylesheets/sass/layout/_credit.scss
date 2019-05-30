@@ -2,13 +2,17 @@
 	grid-column: full-start / full-end;
 	background-color: rgb(28, 28, 28);
 	width: 100%;
-	padding: 10rem 0;
+	padding: 10rem 3rem;
 	
 
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-row-gap: 5rem;
 	justify-items: center;
+
+	@media only screen and (max-width: $bp-small) {
+		display: none;
+	}
 
 	div {
 		display: grid;

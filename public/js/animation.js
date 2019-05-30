@@ -34,41 +34,45 @@ sr.reveal(headerContent, {
 });
 sr.reveal(aboutImg, {
 	duration: 2000,
-	origin: 'left',
-	distance: '6rem'
+	origin: 'bottom',
+	distance: '10rem'
 });
 sr.reveal(aboutPara, {
 	duration: 2000,
-	origin: 'right',
-	distance: '6rem'
+	origin: 'bottom'
 });
 sr.reveal(contactList, {
 	duration: 4000,
 	origin: 'bottom'
 });
 
-
-skills.addEventListener('mouseover', () => {
-
-	for(let i = 0; i < skillsClass.length; i++) {
-		skillsSelector[i].style.animation = `${skillsClass[i]} 2s linear 0s forwards`;
+sr.reveal(skills, {
+	viewFactor: 0.2,
+	beforeReveal: () => {
+		for(let i = 0; i < skillsClass.length; i++) {
+			skillsSelector[i].style.animation = `${skillsClass[i]} 3s linear .7s forwards`;
+		}
 	}
-
 });
+
+// skills.addEventListener('mouseover', () => {
+
+	// for(let i = 0; i < skillsClass.length; i++) {
+	// 	skillsSelector[i].style.animation = `${skillsClass[i]} 2s linear 0s forwards`;
+	// }
+
+// });
 
 // 
 
 for(let i = 0; i < title.length; i++) {
 	sr.reveal(title[i], {
-		duration: 1000,
-		origin: 'left',
-		distance: '6rem'
+		duration: 2000,
+		opacity: 0
 	});
 	sr.reveal(underline[i], {
-		delay: 500,
-		duration: 1000,
-		origin: 'left',
-		distance: '6rem'
+		duration: 2000,
+		opacity: 0
 	});
 }
 
