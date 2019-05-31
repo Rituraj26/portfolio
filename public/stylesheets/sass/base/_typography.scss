@@ -70,6 +70,7 @@
 }
 
 .link:link, .link:visited {
+	width: 15rem;
 	background-color: transparent;
 	color: $color-secondary;
 	font-family: $font-display;
@@ -78,7 +79,14 @@
 	padding: 1.3rem 2rem;
 	border: 1px solid $color-grey-dark-2;
 	text-decoration: none;
+	text-align: center;
 	transition: .2s;
+
+	@media only screen and (max-width: $bp-medium) {
+		font-size: 1rem;
+		padding: 1rem 1rem;
+		width: 10rem;
+	}
 }
 
 .link:hover, .link:active {
@@ -100,13 +108,3 @@
 	align-self: center;
 	text-align: center;
 }
-
-// .heading-2:after {
-//     display: block;
-//     height: 2px;
-//     background-color: #e67e22;
-//     content: " ";
-//     width: 100px;
-//     margin: 0 auto;
-//     margin-top: 30px;
-// }

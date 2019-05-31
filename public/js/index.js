@@ -1,4 +1,7 @@
 // Get DOM Elements
+
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.navbar__links');
 const modal = document.querySelectorAll('.project__overlay');
 const modalBtn = document.querySelectorAll('.btn');
 const closeBtn = document.querySelectorAll('.project__overlay--close');
@@ -12,8 +15,15 @@ const closeBtn = document.querySelectorAll('.project__overlay--close');
 
 // leftArrow.addEventListener('click', (e) => changeImageLeft(e));
 // rightArrow.addEventListener('click', (e) => changeImageRight(e));
+
+burger.addEventListener('click', () => {
+	if(nav.style.display === 'block') {
+		nav.style.display = 'none';
+	} else {
+		nav.style.display = 'block';
+	}
+});
 for(let i = 0; i < modalBtn.length; i++) {
-	// console.log(images[i]);
 	modalBtn[i].addEventListener('click', () => openModal(modal[i]));
 	closeBtn[i].addEventListener('click', () => closeModal(modal[i]));
 	window.addEventListener('click', (e) => outsideClick(e, modal[i]));
