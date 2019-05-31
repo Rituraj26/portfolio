@@ -6,7 +6,7 @@
   "scripts": {
     "watch:sass": "node-sass ./public/stylesheets/sass/main.scss ./public/stylesheets/css/style.css -w",
     "devserver": "live-server --browser=firefox",
-    "start": "npm-run-all --parallel watch:sass",
+    "start": "node app.js",
     "compile:sass": "node-sass ./public/stylesheets/sass/main.scss ./public/stylesheets/css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./public/stylesheets/css/style.comp.css -o ./public/stylesheets/css/style.prefix.css",
     "compress:css": "node-sass ./public/stylesheets/css/style.prefix.css ./public/stylesheets/css/style.css --output-style compressed",
