@@ -14,7 +14,7 @@ const node = document.querySelector('.node');
 const express = document.querySelector('.express');
 const mongodb = document.querySelector('.mongodb');
 const service = document.querySelectorAll('.service');
-const projectShape = document.querySelectorAll('.project__shape');
+// const projectShape = document.querySelectorAll('.project__shape');
 const contactList = document.querySelector('.contact__list');
 
 
@@ -78,13 +78,13 @@ for(let i = 0; i < title.length; i++) {
 
 for(let i = 0; i < service.length; i++) {
 	sr.reveal(service[i], {
-		duration: 4000,
+		// duration: 4000,
 		origin: 'bottom',
 		distance: '30rem'
 	});
-	sr.reveal(projectShape[i], {
-		duration: 3000,
-		opacity: 0,
-	});
+	// sr.reveal(projectShape[i], {
+	// 	// duration: 3000,
+	// 	opacity: 0
+	// });
 }
 
