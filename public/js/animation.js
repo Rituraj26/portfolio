@@ -50,7 +50,7 @@ sr.reveal(skills, {
 	viewFactor: 0.2,
 	beforeReveal: () => {
 		for(let i = 0; i < skillsClass.length; i++) {
-			skillsSelector[i].style.animation = `${skillsClass[i]} 3s linear .7s forwards`;
+			skillsSelector[i].style.animation = `${skillsClass[i]} 2s linear .7s forwards`;
 		}
 	}
 });
@@ -83,8 +83,8 @@ for(let i = 0; i < service.length; i++) {
 		distance: '30rem'
 	});
 	sr.reveal(projectShape[i], {
-		duration: 4000,
-		origin: 'bottom',
+		duration: 3000,
+		opacity: 0,
 	});
 }
 
