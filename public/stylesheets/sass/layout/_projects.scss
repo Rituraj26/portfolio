@@ -6,18 +6,18 @@
 
 	display: grid;
 	grid-template-columns: repeat(3, 25vw);
-	grid-template-rows: repeat(2, min-content) repeat(2, 35rem);
+	grid-template-rows: repeat(2, min-content) repeat(3, 35rem);
 	grid-row-gap: 6rem;
 	justify-content: center;
 	justify-items: center;
 
 	@media only screen and (max-width: $bp-largest) {
 		grid-template-columns: repeat(2, 40vw);
-		grid-template-rows: repeat(2, min-content) repeat(3, 43rem);
+		grid-template-rows: repeat(2, min-content) repeat(4, 43rem);
 	}
 	@media only screen and (max-width: $bp-smallest) {
 		grid-template-columns: 90vw;
-		grid-template-rows: repeat(2, min-content) repeat(6, 45rem);
+		grid-template-rows: repeat(2, min-content) repeat(7, 45rem);
 	}
 
 	&__para {
