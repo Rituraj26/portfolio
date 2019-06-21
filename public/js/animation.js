@@ -5,6 +5,7 @@ const underline = document.querySelectorAll('.underline');
 const aboutImg = document.querySelector('.about__image');
 const aboutPara = document.querySelector('.about__paragraph');
 const skills = document.querySelector('.skills');
+
 const html = document.querySelector('.html');
 const css = document.querySelector('.css');
 const sass = document.querySelector('.sass');
@@ -13,13 +14,15 @@ const react = document.querySelector('.react');
 const node = document.querySelector('.node');
 const express = document.querySelector('.express');
 const mongodb = document.querySelector('.mongodb');
+const git = document.querySelector('.git');
+
 const service = document.querySelectorAll('.service');
 // const projectShape = document.querySelectorAll('.project__shape');
 const contactList = document.querySelector('.contact__list');
 
 
-const skillsClass = ['htmlProg', 'cssProg', 'sassProg', 'jsProg', 'reactProg', 'nodeProg', 'expressProg', 'mongodbProg'];
-const skillsSelector = [html, css, sass, js, react, node, express, mongodb];
+const skillsClass = ['htmlProg', 'cssProg', 'sassProg', 'jsProg', 'reactProg', 'nodeProg', 'expressProg', 'mongodbProg', 'gitProg'];
+const skillsSelector = [html, css, sass, js, react, node, express, mongodb, git];
 
 window.sr = ScrollReveal();
 
