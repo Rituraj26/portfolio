@@ -84,6 +84,16 @@
   100% {
     width: 50%; } }
 
+@keyframes gitProg {
+  0% {
+    width: 0; }
+  25% {
+    width: 5%; }
+  50% {
+    width: 10%; }
+  100% {
+    width: 20%; } }
+
 *,
 *::after,
 *::before {
@@ -384,6 +394,8 @@ body {
       .skills__list--bar .express {
         width: 0%; }
       .skills__list--bar .mongodb {
+        width: 0%; }
+      .skills__list--bar .git {
         width: 0%; }
 
 .services {
