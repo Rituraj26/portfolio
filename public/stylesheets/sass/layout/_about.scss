@@ -3,17 +3,17 @@
 	padding: 15rem 0;
 
 	display: grid;
-	grid-template-columns: 30vw 50vw;
+	// grid-template-columns: 30vw 50vw;
 	grid-template-rows: repeat(3, min-content);
-	grid-column-gap: 5rem;
+	// grid-column-gap: 5rem;
 	grid-row-gap: 4rem;
 	justify-items: center;
 	align-items: center;
 
-	@media only screen and (max-width: $bp-medium) {
-		grid-template-columns: 70vw;
-		text-align: center;
-	}
+	// @media only screen and (max-width: $bp-medium) {
+	// 	// grid-template-columns: 70vw;
+	// 	text-align: center;
+	// }
 
 	&__image {
 		width: 42rem;
@@ -24,5 +24,6 @@
 		font-size: 2rem;
 		color: $color-secondary;
 		line-height: 5rem;
+		text-align: center;
 	}
 }
