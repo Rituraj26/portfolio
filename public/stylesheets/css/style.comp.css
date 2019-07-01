@@ -309,15 +309,15 @@ body {
   grid-template-rows: repeat(3, min-content);
   grid-row-gap: 4rem;
   justify-content: center;
-  align-items: center;
-  text-align: center; }
+  align-items: center; }
   .about__image {
     width: 42rem;
     height: 53rem; }
   .about__paragraph {
     font-size: 2.5rem;
     color: #10442f;
-    line-height: 5rem; }
+    line-height: 5rem;
+    text-align: center; }
 
 .skills {
   grid-column: full-start / full-end;
