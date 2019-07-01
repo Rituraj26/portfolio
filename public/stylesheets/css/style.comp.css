@@ -304,23 +304,18 @@ body {
 
 .about {
   grid-column: center-start / center-end;
-  padding: 15rem 0;
+  padding: 15rem 5rem;
   display: grid;
-  grid-template-columns: 30vw 50vw;
   grid-template-rows: repeat(3, min-content);
-  grid-column-gap: 5rem;
   grid-row-gap: 4rem;
-  justify-items: center;
-  align-items: center; }
-  @media only screen and (max-width: 50em) {
-    .about {
-      grid-template-columns: 70vw;
-      text-align: center; } }
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
   .about__image {
     width: 42rem;
     height: 53rem; }
   .about__paragraph {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: #10442f;
     line-height: 5rem; }
 
