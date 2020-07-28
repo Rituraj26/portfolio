@@ -325,73 +325,24 @@ body {
   background-color: #f9f7f6;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 37vw);
-  grid-template-rows: repeat(2, min-content) max-content;
-  grid-gap: 5rem;
-  justify-content: center;
+  grid-gap: 6rem;
   justify-items: center; }
-  @media only screen and (max-width: 50em) {
-    .skills {
-      grid-template-columns: 70vw; } }
-  @media only screen and (max-width: 28.125em) {
-    .skills {
-      grid-template-columns: 90vw; } }
-  .skills .list-1 {
-    grid-row: 3 / span 1;
-    grid-column: 1 / span 1; }
+  .skills__grid {
+    padding: 0 10vw;
+    display: grid;
+    grid-template-columns: repeat(5, 12vw);
+    grid-gap: 5vw; }
     @media only screen and (max-width: 50em) {
-      .skills .list-1 {
-        grid-column: 1 / -1; } }
-  .skills .list-2 {
-    grid-row: 3 / span 1;
-    grid-column: 2 / span 1; }
-    @media only screen and (max-width: 50em) {
-      .skills .list-2 {
-        grid-column: 1 / -1;
-        grid-row: 4 / -1; } }
-  .skills__list {
-    list-style: none;
-    color: red;
-    width: 100%; }
-    .skills__list--li {
-      margin: 3rem 0; }
-    .skills__list--bar {
-      background-color: rgba(243, 240, 240, 0.863);
-      height: 2.8rem;
-      border: 1px solid #f9f7f6;
-      display: block; }
-      .skills__list--bar span {
-        background-color: #0886ad;
-        float: left;
-        height: 100%;
-        transition: 2s; }
-      .skills__list--bar .count {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        font-weight: 100;
-        word-spacing: 1rem;
-        padding-right: 1rem;
-        font-size: 1.6rem;
-        color: rgba(92, 80, 67, 0.562); }
-      .skills__list--bar .html {
-        width: 0%; }
-      .skills__list--bar .css {
-        width: 0%; }
-      .skills__list--bar .sass {
-        width: 0%; }
-      .skills__list--bar .javascript {
-        width: 0%; }
-      .skills__list--bar .react {
-        width: 0%; }
-      .skills__list--bar .node {
-        width: 0%; }
-      .skills__list--bar .express {
-        width: 0%; }
-      .skills__list--bar .mongodb {
-        width: 0%; }
-      .skills__list--bar .git {
-        width: 0%; }
+      .skills__grid {
+        grid-template-columns: repeat(2, 35vw); } }
+    @media only screen and (max-width: 28.125em) {
+      .skills__grid {
+        grid-template-columns: repeat(2, 47vw);
+        grid-column-gap: 0rem; } }
+    .skills__grid img {
+      width: 100%;
+      height: 100%;
+      box-shadow: rgba(0, 0, 0, 0.137255) 0 1px 2px 0, rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.117647) 0 1px 5px 0; }
 
 .services {
   grid-column: full-start / full-end;
