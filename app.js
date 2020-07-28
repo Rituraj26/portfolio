@@ -8,6 +8,8 @@ app.get('/', (req, res) => {
 	res.render('index');
 });
 
-app.listen(process.env.PORT, process.env.IP);
+const PORT = process.env.PORT || 3000;
 
-// app.listen(3000);
+app.listen(PORT, () => {
+	console.log(`Server Started at ${PORT}`)
+})
