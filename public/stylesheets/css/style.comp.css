@@ -384,8 +384,8 @@ body {
   .service__paragraph {
     font-size: 1.7rem; }
 
-#projectGrp-2,
-#projectGrp-3 {
+.projectGrp-2,
+.projectGrp-3 {
   display: none; }
 
 .projects {
@@ -394,6 +394,7 @@ body {
   background-color: #f9f7f6;
   width: 100%;
   display: grid;
+  grid-template-columns: repeat(3, 25vw);
   grid-template-rows: repeat(3, min-content) 35rem;
   grid-row-gap: 6rem;
   justify-content: center;
@@ -401,19 +402,15 @@ body {
   @media only screen and (max-width: 75em) {
     .projects {
       grid-template-columns: repeat(2, 40vw);
-      grid-template-rows: repeat(2, min-content) repeat(4, 43rem); } }
+      grid-template-rows: repeat(2, min-content) repeat(5, 43rem); } }
   @media only screen and (max-width: 28.125em) {
     .projects {
       grid-template-columns: 90vw;
-      grid-template-rows: repeat(2, min-content) repeat(7, 45rem); } }
+      grid-template-rows: repeat(2, min-content) repeat(9, 45rem); } }
   .projects__para {
     grid-column: 1 / -1;
     font-size: 2rem; }
-  .projects__btn, .projects__container {
-    display: grid;
-    grid-template-columns: repeat(3, 25vw);
-    grid-gap: 6rem; }
-  .projects__btn button {
+  .projects__btn {
     background-color: #fff;
     color: #0886ad;
     border: 1px solid #0886ad;
@@ -424,7 +421,7 @@ body {
     padding: 1.8rem 3rem;
     cursor: pointer;
     transition: all 0.2s; }
-    .projects__btn button:hover {
+    .projects__btn:hover {
       background-color: #0b6575;
       color: #fff; }
 

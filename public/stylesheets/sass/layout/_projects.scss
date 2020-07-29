@@ -1,5 +1,5 @@
-#projectGrp-2,
-#projectGrp-3 {
+.projectGrp-2,
+.projectGrp-3 {
     display: none;
 }
 .projects {
@@ -9,7 +9,7 @@
     width: 100%;
 
     display: grid;
-    // grid-template-columns: repeat(3, 25vw);
+    grid-template-columns: repeat(3, 25vw);
     grid-template-rows: repeat(3, min-content) 35rem;
     grid-row-gap: 6rem;
     justify-content: center;
@@ -17,11 +17,11 @@
 
     @media only screen and (max-width: $bp-largest) {
         grid-template-columns: repeat(2, 40vw);
-        grid-template-rows: repeat(2, min-content) repeat(4, 43rem);
+        grid-template-rows: repeat(2, min-content) repeat(5, 43rem);
     }
     @media only screen and (max-width: $bp-smallest) {
         grid-template-columns: 90vw;
-        grid-template-rows: repeat(2, min-content) repeat(7, 45rem);
+        grid-template-rows: repeat(2, min-content) repeat(9, 45rem);
     }
 
     &__para {
@@ -29,14 +29,7 @@
         font-size: 2rem;
     }
 
-    &__btn,
-    &__container {
-        display: grid;
-        grid-template-columns: repeat(3, 25vw);
-        grid-gap: 6rem;
-    }
-
-    &__btn button {
+    &__btn {
         background-color: #fff;
         color: $color-primary;
         border: 1px solid $color-primary;
@@ -53,11 +46,6 @@
             color: #fff;
         }
     }
-
-    // &__btn--selected {
-    //     background-color: $color-primary-dark;
-    //     color: #fff;
-    // }
 }
 
 .project {

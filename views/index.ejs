@@ -30,7 +30,7 @@
         <title>Rituraj Dutta - Full Stack Web Developer</title>
     </head>
 
-    <body class="container">
+    <body class="container" onload="hideProjects()">
         <nav class="navbar">
             <div class="navbar__logo">
                 <i class="fas fa-tv"></i>
@@ -158,428 +158,411 @@
             <h2 class="heading-2 title">Projects</h2>
             <div class="underline">&mdash;</div>
 
-            <div class="projects__btn">
-                <button onclick="toggleProjects(1)">
-                    Front End Design
-                </button>
-                <button onclick="toggleProjects(2)">
-                    Front End Application
-                </button>
-                <button onclick="toggleProjects(3)">
-                    Full Stack Application
-                </button>
-            </div>
+            <!-- <div class="projects__btn"> -->
+            <button onclick="toggleProjects(1)" class="projects__btn">
+                Front End Design
+            </button>
+            <button onclick="toggleProjects(2)" class="projects__btn">
+                Front End Application
+            </button>
+            <button onclick="toggleProjects(3)" class="projects__btn">
+                Full Stack Application
+            </button>
+            <!-- </div> -->
 
-            <div class="projects__container" id="projectGrp-1">
-                <figure class="project__shape">
-                    <img
-                        class="project__image"
-                        src="/resources/img/homejone.png"
-                        alt="project-2"
-                    />
-                    <h4 class="heading-4">Homejone</h4>
-                    <figcaption class="project__caption">
-                        <h4 class="heading-4 mb-sm">Homejone</h4>
-                        <p class="mb-md">CSS Grid</p>
-                        <button id="project__btn" class="btn btn-outline">
-                            More Info
-                        </button>
-                    </figcaption>
-                    <div class="project__overlay">
-                        <div class="project__overlay--container">
-                            <figure class="project__overlay--figure">
-                                <img
-                                    class="project__overlay--image"
-                                    src="/resources/img/homejone.png"
-                                    alt="project-2"
-                                />
-                                <span class="project__overlay--close"
-                                    >&times;</span
-                                >
-                                <i class="fas fa-chevron-left" id="left"></i>
-                                <i class="fas fa-chevron-right" id="right"></i>
-                            </figure>
+            <!-- <div class="projects__container" class="projectGrp-1"> -->
+            <figure class="project__shape projectGrp-1">
+                <img
+                    class="project__image"
+                    src="/resources/img/homejone.png"
+                    alt="project-2"
+                />
+                <h4 class="heading-4">Homejone</h4>
+                <figcaption class="project__caption">
+                    <h4 class="heading-4 mb-sm">Homejone</h4>
+                    <p class="mb-md">CSS Grid</p>
+                    <button id="project__btn" class="btn btn-outline">
+                        More Info
+                    </button>
+                </figcaption>
+                <div class="project__overlay">
+                    <div class="project__overlay--container">
+                        <figure class="project__overlay--figure">
+                            <img
+                                class="project__overlay--image"
+                                src="/resources/img/homejone.png"
+                                alt="project-2"
+                            />
+                            <span class="project__overlay--close">&times;</span>
+                            <i class="fas fa-chevron-left" id="left"></i>
+                            <i class="fas fa-chevron-right" id="right"></i>
+                        </figure>
 
-                            <div class="project__overlay--header">
-                                <h4 class="heading-4 project__overlay--header">
-                                    Homejone
-                                </h4>
-                                <a
-                                    class="link"
-                                    href="https://github.com/Rituraj26/homejone"
-                                    target="_blank"
-                                    >Github Link</a
-                                >
-                                <a
-                                    class="link"
-                                    href="https://homejone.herokuapp.com"
-                                    target="_blank"
-                                    >Website Link</a
-                                >
-                            </div>
-
-                            <hr />
-
-                            <p class="project__overlay--para">
-                                It is a landing page for house selling website.
-                                I created the layout using CSS Grid. Also i have
-                                created a gallery which shows the power of CSS
-                                Grid.
-                            </p>
+                        <div class="project__overlay--header">
+                            <h4 class="heading-4 project__overlay--header">
+                                Homejone
+                            </h4>
+                            <a
+                                class="link"
+                                href="https://github.com/Rituraj26/homejone"
+                                target="_blank"
+                                >Github Link</a
+                            >
+                            <a
+                                class="link"
+                                href="https://homejone.herokuapp.com"
+                                target="_blank"
+                                >Website Link</a
+                            >
                         </div>
+
+                        <hr />
+
+                        <p class="project__overlay--para">
+                            It is a landing page for house selling website. I
+                            created the layout using CSS Grid. Also i have
+                            created a gallery which shows the power of CSS Grid.
+                        </p>
                     </div>
-                </figure>
+                </div>
+            </figure>
 
-                <figure class="project__shape">
-                    <img
-                        class="project__image"
-                        src="/resources/img/health_kitchen.png"
-                        alt="project-3"
-                    />
-                    <h4 class="heading-4">Health Kitchen</h4>
-                    <figcaption class="project__caption">
-                        <h4 class="heading-4 mb-sm">Health Kitchen</h4>
-                        <p class="mb-md">CSS Grid</p>
-                        <button id="project__btn" class="btn btn-outline">
-                            More Info
-                        </button>
-                    </figcaption>
-                    <div class="project__overlay">
-                        <div class="project__overlay--container">
-                            <figure class="project__overlay--figure">
-                                <img
-                                    class="project__overlay--image"
-                                    src="/resources/img/health_kitchen.png"
-                                    alt="project-3"
-                                />
-                                <span class="project__overlay--close"
-                                    >&times;</span
-                                >
-                                <i class="fas fa-chevron-left" id="left"></i>
-                                <i class="fas fa-chevron-right" id="right"></i>
-                            </figure>
+            <figure class="project__shape projectGrp-1">
+                <img
+                    class="project__image"
+                    src="/resources/img/health_kitchen.png"
+                    alt="project-3"
+                />
+                <h4 class="heading-4">Health Kitchen</h4>
+                <figcaption class="project__caption">
+                    <h4 class="heading-4 mb-sm">Health Kitchen</h4>
+                    <p class="mb-md">CSS Grid</p>
+                    <button id="project__btn" class="btn btn-outline">
+                        More Info
+                    </button>
+                </figcaption>
+                <div class="project__overlay">
+                    <div class="project__overlay--container">
+                        <figure class="project__overlay--figure">
+                            <img
+                                class="project__overlay--image"
+                                src="/resources/img/health_kitchen.png"
+                                alt="project-3"
+                            />
+                            <span class="project__overlay--close">&times;</span>
+                            <i class="fas fa-chevron-left" id="left"></i>
+                            <i class="fas fa-chevron-right" id="right"></i>
+                        </figure>
 
-                            <div class="project__overlay--header">
-                                <h4 class="heading-4 project__overlay--header">
-                                    Health Kitchen
-                                </h4>
-                                <a
-                                    class="link"
-                                    href="https://github.com/Rituraj26/Health_Kitchen"
-                                    target="_blank"
-                                    >Github Link</a
-                                >
-                                <a
-                                    class="link"
-                                    href="https://healthkitchen.herokuapp.com"
-                                    target="_blank"
-                                    >Website Link</a
-                                >
-                            </div>
-                            <hr />
-                            <p class="project__overlay--para">
-                                It is a landing page for healthy food and juices
-                                selling page. I created this website using CSS
-                                Grid and using some transformation property to
-                                show some nice transitions.
-                            </p>
+                        <div class="project__overlay--header">
+                            <h4 class="heading-4 project__overlay--header">
+                                Health Kitchen
+                            </h4>
+                            <a
+                                class="link"
+                                href="https://github.com/Rituraj26/Health_Kitchen"
+                                target="_blank"
+                                >Github Link</a
+                            >
+                            <a
+                                class="link"
+                                href="https://healthkitchen.herokuapp.com"
+                                target="_blank"
+                                >Website Link</a
+                            >
                         </div>
+                        <hr />
+                        <p class="project__overlay--para">
+                            It is a landing page for healthy food and juices
+                            selling page. I created this website using CSS Grid
+                            and using some transformation property to show some
+                            nice transitions.
+                        </p>
                     </div>
-                </figure>
+                </div>
+            </figure>
 
-                <figure class="project__shape">
-                    <img
-                        class="project__image"
-                        src="/resources/img/project-4.jpg"
-                        alt="project-4"
-                    />
-                    <h4 class="heading-4">GPA Calculator</h4>
-                    <figcaption class="project__caption">
-                        <h4 class="heading-4 mb-sm">GPA Calculator</h4>
-                        <p class="mb-md">Reactjs, CSS Grid</p>
-                        <button id="project__btn" class="btn btn-outline">
-                            More Info
-                        </button>
-                    </figcaption>
-                    <div class="project__overlay">
-                        <div class="project__overlay--container">
-                            <figure class="project__overlay--figure">
-                                <img
-                                    class="project__overlay--image"
-                                    src="/resources/img/project-4.jpg"
-                                    alt="project-4"
-                                />
-                                <span class="project__overlay--close"
-                                    >&times;</span
-                                >
-                                <i class="fas fa-chevron-left" id="left"></i>
-                                <i class="fas fa-chevron-right" id="right"></i>
-                            </figure>
+            <figure class="project__shape projectGrp-1">
+                <img
+                    class="project__image"
+                    src="/resources/img/project-4.jpg"
+                    alt="project-4"
+                />
+                <h4 class="heading-4">GPA Calculator</h4>
+                <figcaption class="project__caption">
+                    <h4 class="heading-4 mb-sm">GPA Calculator</h4>
+                    <p class="mb-md">Reactjs, CSS Grid</p>
+                    <button id="project__btn" class="btn btn-outline">
+                        More Info
+                    </button>
+                </figcaption>
+                <div class="project__overlay">
+                    <div class="project__overlay--container">
+                        <figure class="project__overlay--figure">
+                            <img
+                                class="project__overlay--image"
+                                src="/resources/img/project-4.jpg"
+                                alt="project-4"
+                            />
+                            <span class="project__overlay--close">&times;</span>
+                            <i class="fas fa-chevron-left" id="left"></i>
+                            <i class="fas fa-chevron-right" id="right"></i>
+                        </figure>
 
-                            <div class="project__overlay--header">
-                                <h4 class="heading-4 project__overlay--header">
-                                    GPA Calculator
-                                </h4>
-                                <a
-                                    class="link"
-                                    href="https://github.com/Rituraj26/gpa-calculator"
-                                    target="_blank"
-                                    >Github Link</a
-                                >
-                                <a
-                                    class="link"
-                                    href="https://gpacalculator1926.herokuapp.com"
-                                    target="_blank"
-                                    >Website Link</a
-                                >
-                            </div>
-                            <hr />
-                            <p class="project__overlay--para">
-                                GPA Calculator is a react application which
-                                calculates the gpa of different students. It has
-                                two categories for CSE department and Other
-                                category. If you are in CSE department then it
-                                will directly display all the subjects but if
-                                you are in other departments then it will show
-                                you the form where you have enter the credit to
-                                calculate it. You can also calculate CGPA by
-                                entering the semester GPAs.
-                            </p>
+                        <div class="project__overlay--header">
+                            <h4 class="heading-4 project__overlay--header">
+                                GPA Calculator
+                            </h4>
+                            <a
+                                class="link"
+                                href="https://github.com/Rituraj26/gpa-calculator"
+                                target="_blank"
+                                >Github Link</a
+                            >
+                            <a
+                                class="link"
+                                href="https://gpacalculator1926.herokuapp.com"
+                                target="_blank"
+                                >Website Link</a
+                            >
                         </div>
+                        <hr />
+                        <p class="project__overlay--para">
+                            GPA Calculator is a react application which
+                            calculates the gpa of different students. It has two
+                            categories for CSE department and Other category. If
+                            you are in CSE department then it will directly
+                            display all the subjects but if you are in other
+                            departments then it will show you the form where you
+                            have enter the credit to calculate it. You can also
+                            calculate CGPA by entering the semester GPAs.
+                        </p>
                     </div>
-                </figure>
-            </div>
+                </div>
+            </figure>
+            <!-- </div> -->
 
-            <div class="projects__container" id="projectGrp-2">
-                <figure class="project__shape">
-                    <img
-                        class="project__image"
-                        src="/resources/img/freddie.png"
-                        alt="project-5"
-                    />
-                    <h4 class="heading-4">Freddie Mercury Tribute Page</h4>
-                    <figcaption class="project__caption">
-                        <h4 class="heading-4 mb-sm">
-                            Freddie Mercury Tribute Page
-                        </h4>
-                        <p class="mb-md">CSS Grid</p>
-                        <button id="project__btn" class="btn btn-outline">
-                            More Info
-                        </button>
-                    </figcaption>
-                    <div class="project__overlay">
-                        <div class="project__overlay--container">
-                            <figure class="project__overlay--figure">
-                                <img
-                                    class="project__overlay--image"
-                                    src="/resources/img/freddie.png"
-                                    alt="project-5"
-                                />
-                                <span class="project__overlay--close"
-                                    >&times;</span
-                                >
-                                <i class="fas fa-chevron-left" id="left"></i>
-                                <i class="fas fa-chevron-right" id="right"></i>
-                            </figure>
+            <!-- <div class="projects__container" id="projectGrp-2"> -->
+            <figure class="project__shape projectGrp-2">
+                <img
+                    class="project__image"
+                    src="/resources/img/freddie.png"
+                    alt="project-5"
+                />
+                <h4 class="heading-4">Freddie Mercury Tribute Page</h4>
+                <figcaption class="project__caption">
+                    <h4 class="heading-4 mb-sm">
+                        Freddie Mercury Tribute Page
+                    </h4>
+                    <p class="mb-md">CSS Grid</p>
+                    <button id="project__btn" class="btn btn-outline">
+                        More Info
+                    </button>
+                </figcaption>
+                <div class="project__overlay">
+                    <div class="project__overlay--container">
+                        <figure class="project__overlay--figure">
+                            <img
+                                class="project__overlay--image"
+                                src="/resources/img/freddie.png"
+                                alt="project-5"
+                            />
+                            <span class="project__overlay--close">&times;</span>
+                            <i class="fas fa-chevron-left" id="left"></i>
+                            <i class="fas fa-chevron-right" id="right"></i>
+                        </figure>
 
-                            <div class="project__overlay--header">
-                                <h4 class="heading-4 project__overlay--header">
-                                    Freddie Mercury Tribute Page
-                                </h4>
-                                <a
-                                    class="link"
-                                    href="https://github.com/Rituraj26/Freddie-Mercury-Tribute-Page"
-                                    target="_blank"
-                                    >Github Link</a
-                                >
-                                <a
-                                    class="link"
-                                    href="https://freddiemercury.herokuapp.com"
-                                    target="_blank"
-                                    >Website Link</a
-                                >
-                            </div>
-                            <hr />
-                            <p class="project__overlay--para">
-                                It is simple page website which i created to
-                                give a tribute to Freddie Mercury. I used CSS
-                                Grid to layout the responsiveness.
-                            </p>
+                        <div class="project__overlay--header">
+                            <h4 class="heading-4 project__overlay--header">
+                                Freddie Mercury Tribute Page
+                            </h4>
+                            <a
+                                class="link"
+                                href="https://github.com/Rituraj26/Freddie-Mercury-Tribute-Page"
+                                target="_blank"
+                                >Github Link</a
+                            >
+                            <a
+                                class="link"
+                                href="https://freddiemercury.herokuapp.com"
+                                target="_blank"
+                                >Website Link</a
+                            >
                         </div>
+                        <hr />
+                        <p class="project__overlay--para">
+                            It is simple page website which i created to give a
+                            tribute to Freddie Mercury. I used CSS Grid to
+                            layout the responsiveness.
+                        </p>
                     </div>
-                </figure>
+                </div>
+            </figure>
 
-                <figure class="project__shape">
-                    <img
-                        class="project__image"
-                        src="/resources/img/budget_calc.png"
-                        alt="project-6"
-                    />
-                    <h4 class="heading-4">Budget Calculator</h4>
-                    <figcaption class="project__caption">
-                        <h4 class="heading-4 mb-sm">Budget Calculator</h4>
-                        <p class="mb-md">Vanilla JS</p>
-                        <button id="project__btn" class="btn btn-outline">
-                            More Info
-                        </button>
-                    </figcaption>
-                    <div class="project__overlay">
-                        <div class="project__overlay--container">
-                            <figure class="project__overlay--figure">
-                                <img
-                                    class="project__overlay--image"
-                                    src="/resources/img/budget_calc.png"
-                                    alt="project-6"
-                                />
-                                <span class="project__overlay--close"
-                                    >&times;</span
-                                >
-                                <i class="fas fa-chevron-left" id="left"></i>
-                                <i class="fas fa-chevron-right" id="right"></i>
-                            </figure>
+            <figure class="project__shape projectGrp-2">
+                <img
+                    class="project__image"
+                    src="/resources/img/budget_calc.png"
+                    alt="project-6"
+                />
+                <h4 class="heading-4">Budget Calculator</h4>
+                <figcaption class="project__caption">
+                    <h4 class="heading-4 mb-sm">Budget Calculator</h4>
+                    <p class="mb-md">Vanilla JS</p>
+                    <button id="project__btn" class="btn btn-outline">
+                        More Info
+                    </button>
+                </figcaption>
+                <div class="project__overlay">
+                    <div class="project__overlay--container">
+                        <figure class="project__overlay--figure">
+                            <img
+                                class="project__overlay--image"
+                                src="/resources/img/budget_calc.png"
+                                alt="project-6"
+                            />
+                            <span class="project__overlay--close">&times;</span>
+                            <i class="fas fa-chevron-left" id="left"></i>
+                            <i class="fas fa-chevron-right" id="right"></i>
+                        </figure>
 
-                            <div class="project__overlay--header">
-                                <h4 class="heading-4 project__overlay--header">
-                                    Budget Calculator
-                                </h4>
-                                <a
-                                    class="link"
-                                    href="https://github.com/Rituraj26/Budget_calculator"
-                                    target="_blank"
-                                    >Github Link</a
-                                >
-                                <a
-                                    class="link"
-                                    href="https://budgetcalculator265.herokuapp.com"
-                                    target="_blank"
-                                    >Website Link</a
-                                >
-                            </div>
-
-                            <hr />
-                            <p class="project__overlay--para">
-                                It is an application which calculates the budget
-                                using the income and expenses.
-                            </p>
+                        <div class="project__overlay--header">
+                            <h4 class="heading-4 project__overlay--header">
+                                Budget Calculator
+                            </h4>
+                            <a
+                                class="link"
+                                href="https://github.com/Rituraj26/Budget_calculator"
+                                target="_blank"
+                                >Github Link</a
+                            >
+                            <a
+                                class="link"
+                                href="https://budgetcalculator265.herokuapp.com"
+                                target="_blank"
+                                >Website Link</a
+                            >
                         </div>
+
+                        <hr />
+                        <p class="project__overlay--para">
+                            It is an application which calculates the budget
+                            using the income and expenses.
+                        </p>
                     </div>
-                </figure>
+                </div>
+            </figure>
 
-                <figure class="project__shape">
-                    <img
-                        class="project__image"
-                        src="/resources/img/blogstack.png"
-                        alt="project-6"
-                    />
-                    <h4 class="heading-4">Blogstack</h4>
-                    <figcaption class="project__caption">
-                        <h4 class="heading-4 mb-sm">Blogstack</h4>
-                        <p class="mb-md">Semantic UI, Nodejs, MongoDB</p>
-                        <button id="project__btn" class="btn btn-outline">
-                            More Info
-                        </button>
-                    </figcaption>
-                    <div class="project__overlay">
-                        <div class="project__overlay--container">
-                            <figure class="project__overlay--figure">
-                                <img
-                                    class="project__overlay--image"
-                                    src="/resources/img/blogstack.png"
-                                    alt="project-6"
-                                />
-                                <span class="project__overlay--close"
-                                    >&times;</span
-                                >
-                                <i class="fas fa-chevron-left" id="left"></i>
-                                <i class="fas fa-chevron-right" id="right"></i>
-                            </figure>
+            <figure class="project__shape projectGrp-2">
+                <img
+                    class="project__image"
+                    src="/resources/img/blogstack.png"
+                    alt="project-6"
+                />
+                <h4 class="heading-4">Blogstack</h4>
+                <figcaption class="project__caption">
+                    <h4 class="heading-4 mb-sm">Blogstack</h4>
+                    <p class="mb-md">Semantic UI, Nodejs, MongoDB</p>
+                    <button id="project__btn" class="btn btn-outline">
+                        More Info
+                    </button>
+                </figcaption>
+                <div class="project__overlay">
+                    <div class="project__overlay--container">
+                        <figure class="project__overlay--figure">
+                            <img
+                                class="project__overlay--image"
+                                src="/resources/img/blogstack.png"
+                                alt="project-6"
+                            />
+                            <span class="project__overlay--close">&times;</span>
+                            <i class="fas fa-chevron-left" id="left"></i>
+                            <i class="fas fa-chevron-right" id="right"></i>
+                        </figure>
 
-                            <div class="project__overlay--header">
-                                <h4 class="heading-4 project__overlay--header">
-                                    Blogstack
-                                </h4>
-                                <a
-                                    class="link"
-                                    href="https://github.com/Rituraj26/Blogstack"
-                                    target="_blank"
-                                    >Github Link</a
-                                >
-                                <a
-                                    class="link"
-                                    href="https://blogstack.herokuapp.com/blogs"
-                                    target="_blank"
-                                    >Website Link</a
-                                >
-                            </div>
-
-                            <hr />
-                            <p class="project__overlay--para">
-                                It is a platform where users can upload blogs
-                                and it also contains the authorisation part
-                                where only the owner of the blogs can only
-                                modify the blogs.
-                            </p>
+                        <div class="project__overlay--header">
+                            <h4 class="heading-4 project__overlay--header">
+                                Blogstack
+                            </h4>
+                            <a
+                                class="link"
+                                href="https://github.com/Rituraj26/Blogstack"
+                                target="_blank"
+                                >Github Link</a
+                            >
+                            <a
+                                class="link"
+                                href="https://blogstack.herokuapp.com/blogs"
+                                target="_blank"
+                                >Website Link</a
+                            >
                         </div>
-                    </div>
-                </figure>
-            </div>
 
-            <div class="projects__container" id="projectGrp-3">
-                <figure class="project__shape">
-                    <img
-                        class="project__image"
-                        src="/resources/img/ecotourism.png"
-                        alt="project-1"
-                    />
-                    <h4 class="heading-4">Ecotourism</h4>
-                    <figcaption class="project__caption">
-                        <h4 class="heading-4 mb-sm">Ecotourism</h4>
-                        <p class="mb-md">Bootstrap, Nodejs, MongoDB</p>
-                        <button id="project__btn" class="btn btn-outline">
-                            More Info
-                        </button>
-                    </figcaption>
-                    <div class="project__overlay">
-                        <div class="project__overlay--container">
-                            <figure class="project__overlay--figure">
-                                <img
-                                    class="project__overlay--image"
-                                    src="/resources/img/ecotourism.png"
-                                    alt="project-1"
-                                />
-                                <span class="project__overlay--close"
-                                    >&times;</span
-                                >
-                                <i class="fas fa-chevron-left" id="left"></i>
-                                <i class="fas fa-chevron-right" id="right"></i>
-                            </figure>
-                            <div class="project__overlay--header">
-                                <h4 class="heading-4">Ecotourism</h4>
-                                <a
-                                    class="link"
-                                    href="https://github.com/Rituraj26/Eco-tourism"
-                                    target="_blank"
-                                    >Github Link</a
-                                >
-                                <a
-                                    class="link"
-                                    href="https://ecotourism.herokuapp.com"
-                                    target="_blank"
-                                    >Website Link</a
-                                >
-                            </div>
-                            <hr />
-                            <p class="project__overlay--para">
-                                Here you can get the details of all the
-                                eco-friendly places, it also allows you to post
-                                a place. You can also comment and look into
-                                other’s comment for details. It also shows the
-                                exact location of the place.
-                            </p>
-                        </div>
+                        <hr />
+                        <p class="project__overlay--para">
+                            It is a platform where users can upload blogs and it
+                            also contains the authorisation part where only the
+                            owner of the blogs can only modify the blogs.
+                        </p>
                     </div>
-                </figure>
-            </div>
+                </div>
+            </figure>
+            <!-- </div> -->
+
+            <!-- <div class="projects__container" id="projectGrp-3"> -->
+            <figure class="project__shape projectGrp-3">
+                <img
+                    class="project__image"
+                    src="/resources/img/ecotourism.png"
+                    alt="project-1"
+                />
+                <h4 class="heading-4">Ecotourism</h4>
+                <figcaption class="project__caption">
+                    <h4 class="heading-4 mb-sm">Ecotourism</h4>
+                    <p class="mb-md">Bootstrap, Nodejs, MongoDB</p>
+                    <button id="project__btn" class="btn btn-outline">
+                        More Info
+                    </button>
+                </figcaption>
+                <div class="project__overlay">
+                    <div class="project__overlay--container">
+                        <figure class="project__overlay--figure">
+                            <img
+                                class="project__overlay--image"
+                                src="/resources/img/ecotourism.png"
+                                alt="project-1"
+                            />
+                            <span class="project__overlay--close">&times;</span>
+                            <i class="fas fa-chevron-left" id="left"></i>
+                            <i class="fas fa-chevron-right" id="right"></i>
+                        </figure>
+                        <div class="project__overlay--header">
+                            <h4 class="heading-4">Ecotourism</h4>
+                            <a
+                                class="link"
+                                href="https://github.com/Rituraj26/Eco-tourism"
+                                target="_blank"
+                                >Github Link</a
+                            >
+                            <a
+                                class="link"
+                                href="https://ecotourism.herokuapp.com"
+                                target="_blank"
+                                >Website Link</a
+                            >
+                        </div>
+                        <hr />
+                        <p class="project__overlay--para">
+                            Here you can get the details of all the eco-friendly
+                            places, it also allows you to post a place. You can
+                            also comment and look into other’s comment for
+                            details. It also shows the exact location of the
+                            place.
+                        </p>
+                    </div>
+                </div>
+            </figure>
+            <!-- </div> -->
         </section>
 
         <section class="contact" id="contact">
@@ -625,31 +608,5 @@
 
         <script src="/js/animation.js"></script>
         <script src="/js/index.js"></script>
-        <script>
-            const toggleProjects = (id) => {
-                if (id === 1) {
-                    document.querySelector('#projectGrp-1').style.display =
-                        'grid';
-                    document.querySelector('#projectGrp-2').style.display =
-                        'none';
-                    document.querySelector('#projectGrp-3').style.display =
-                        'none';
-                } else if (id === 2) {
-                    document.querySelector('#projectGrp-1').style.display =
-                        'none';
-                    document.querySelector('#projectGrp-2').style.display =
-                        'grid';
-                    document.querySelector('#projectGrp-3').style.display =
-                        'none';
-                } else if (id === 3) {
-                    document.querySelector('#projectGrp-1').style.display =
-                        'none';
-                    document.querySelector('#projectGrp-2').style.display =
-                        'none';
-                    document.querySelector('#projectGrp-3').style.display =
-                        'grid';
-                }
-            };
-        </script>
     </body>
 </html>
