@@ -171,7 +171,7 @@ body {
   text-transform: uppercase;
   padding: 1.8rem 3rem;
   cursor: pointer;
-  transition: all .2s; }
+  transition: all 0.2s; }
   .btn:hover {
     background-color: #0b6575; }
 
@@ -183,7 +183,8 @@ body {
     background-color: #0b6575;
     color: #fff; }
 
-.link:link, .link:visited {
+.link:link,
+.link:visited {
   width: 15rem;
   background-color: transparent;
   color: #10442f;
@@ -194,19 +195,21 @@ body {
   border: 1px solid #53483c;
   text-decoration: none;
   text-align: center;
-  transition: .2s; }
+  transition: 0.2s; }
   @media only screen and (max-width: 50em) {
-    .link:link, .link:visited {
+    .link:link,
+    .link:visited {
       font-size: 1rem;
       padding: 1rem 1rem;
       width: 10rem; } }
 
-.link:hover, .link:active {
+.link:hover,
+.link:active {
   background-color: #10442f;
   color: #f9f7f6; }
 
 .underline {
-  line-height: .3rem;
+  line-height: 0.3rem;
   background-color: #e67e22;
   width: 7rem;
   grid-column: 1 / -1;
@@ -309,6 +312,7 @@ body {
   grid-template-rows: repeat(3, min-content);
   grid-row-gap: 4rem;
   justify-content: center;
+  justify-items: center;
   align-items: center; }
   .about__image {
     width: 42rem;
@@ -337,7 +341,7 @@ body {
         grid-template-columns: repeat(2, 35vw); } }
     @media only screen and (max-width: 28.125em) {
       .skills__grid {
-        grid-template-columns: repeat(2, 47vw);
+        grid-template-columns: repeat(2, 41vw);
         grid-column-gap: 0rem; } }
     .skills__grid img {
       width: 100%;
@@ -377,7 +381,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.137255) 0 1px 2px 0, rgba(0, 0, 0, 0.2) 0 3px 1px -2px, rgba(0, 0, 0, 0.117647) 0 1px 5px 0;
   text-align: center;
   padding: 3rem;
-  transition: all .2s; }
+  transition: all 0.2s; }
   .service i {
     font-size: 5rem;
     color: #0886ad; }
@@ -397,6 +401,7 @@ body {
   grid-template-columns: repeat(3, 25vw);
   grid-template-rows: repeat(3, min-content) 35rem;
   grid-row-gap: 6rem;
+  grid-column-gap: 2rem;
   justify-content: center;
   justify-items: center; }
   @media only screen and (max-width: 75em) {
