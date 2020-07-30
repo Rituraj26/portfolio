@@ -2,7 +2,7 @@
 const burger = document.querySelector('.burger');
 const nav = document.querySelector('.navbar__links');
 const modal = document.querySelectorAll('.project__overlay');
-const modalBtn = document.querySelectorAll('.btn');
+const modalBtn = document.querySelectorAll('.project__btn');
 const closeBtn = document.querySelectorAll('.project__overlay--close');
 
 burger.addEventListener('click', () => {

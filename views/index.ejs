@@ -181,7 +181,7 @@
                 <figcaption class="project__caption">
                     <h4 class="heading-4 mb-sm">Homejone</h4>
                     <p class="mb-md">CSS Grid</p>
-                    <button id="project__btn" class="btn btn-outline">
+                    <button class="btn btn-outline project__btn">
                         More Info
                     </button>
                 </figcaption>
@@ -237,7 +237,7 @@
                 <figcaption class="project__caption">
                     <h4 class="heading-4 mb-sm">Health Kitchen</h4>
                     <p class="mb-md">CSS Grid</p>
-                    <button id="project__btn" class="btn btn-outline">
+                    <button class="btn btn-outline project__btn">
                         More Info
                     </button>
                 </figcaption>
@@ -292,7 +292,7 @@
                 <figcaption class="project__caption">
                     <h4 class="heading-4 mb-sm">GPA Calculator</h4>
                     <p class="mb-md">Reactjs, CSS Grid</p>
-                    <button id="project__btn" class="btn btn-outline">
+                    <button class="btn btn-outline project__btn">
                         More Info
                     </button>
                 </figcaption>
@@ -355,7 +355,7 @@
                         Freddie Mercury Tribute Page
                     </h4>
                     <p class="mb-md">CSS Grid</p>
-                    <button id="project__btn" class="btn btn-outline">
+                    <button class="btn btn-outline project__btn">
                         More Info
                     </button>
                 </figcaption>
@@ -409,7 +409,7 @@
                 <figcaption class="project__caption">
                     <h4 class="heading-4 mb-sm">Budget Calculator</h4>
                     <p class="mb-md">Vanilla JS</p>
-                    <button id="project__btn" class="btn btn-outline">
+                    <button class="btn btn-outline project__btn">
                         More Info
                     </button>
                 </figcaption>
@@ -463,7 +463,7 @@
                 <figcaption class="project__caption">
                     <h4 class="heading-4 mb-sm">Blogstack</h4>
                     <p class="mb-md">Semantic UI, Nodejs, MongoDB</p>
-                    <button id="project__btn" class="btn btn-outline">
+                    <button class="btn btn-outline project__btn">
                         More Info
                     </button>
                 </figcaption>
@@ -520,7 +520,7 @@
                 <figcaption class="project__caption">
                     <h4 class="heading-4 mb-sm">Ecotourism</h4>
                     <p class="mb-md">Bootstrap, Nodejs, MongoDB</p>
-                    <button id="project__btn" class="btn btn-outline">
+                    <button class="btn btn-outline project__btn">
                         More Info
                     </button>
                 </figcaption>
@@ -569,14 +569,6 @@
             <h2 class="heading-2 title mb-sm">Contact</h2>
             <div class="underline mb-sm">&mdash;</div>
 
-            <form class="contact__form" action="/contact" method="POST">
-                <input name="contactName" type="text" placeholder="Name" />
-                <input name="contactEmail" type="email" placeholder="Email" />
-                <input name="contactSub" type="text" placeholder="Subject" />
-                <textarea name="contactMessage"></textarea>
-                <button class="projects__btn" type="submit">Send</button>
-            </form>
-
             <ul class="contact__list">
                 <li>
                     <a
@@ -601,6 +593,22 @@
                     </a>
                 </li>
             </ul>
+
+            <form class="contact__form" action="/contact" method="POST">
+                <input name="contactName" type="text" placeholder="Name" />
+                <input name="contactEmail" type="email" placeholder="Email" />
+                <input name="contactSub" type="text" placeholder="Subject" />
+                <textarea
+                    name="contactMessage"
+                    placeholder="Message"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+
+                <button class="btn" type="submit">
+                    Send
+                </button>
+            </form>
         </section>
 
         <footer class="footer">
