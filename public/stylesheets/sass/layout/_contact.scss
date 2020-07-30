@@ -1,31 +1,71 @@
 .contact {
-	grid-column: full-start / full-end;
-	width: 100%;
-	padding: 25rem 0;
+    grid-column: full-start / full-end;
+    width: 100%;
+    padding: 25rem 0;
 
-	display: grid;
-	grid-row-gap: 5rem;
-	justify-content: center;
-	justify-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6rem;
+    justify-items: center;
 
-	@media only screen and (max-width: $bp-smallest) {
-		padding: 10rem 0;
-	}
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 10rem 0;
+        grid-template-columns: max-content;
+        justify-content: center;
+        grid-gap: 5rem;
+    }
 
-	&__list {
-		list-style: none;
-		display: grid;
-		grid-template-columns: repeat(4, min-content);
-		grid-gap: 3rem;
-	}
+    &__form {
+        display: grid;
+        grid-gap: 3rem;
+        padding: 0 20%;
+        // justify-items: start;
 
-	a:link, a:visited {
-		text-decoration: none;
-		color: $color-secondary;
-		font-size: 3rem;
-		transition: .2s;
-	}
-	a:hover, a:active {
-		color: grey;
-	}
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 0% 10%;
+            // justify-content: center;
+        }
+
+        input,
+        textarea {
+            // justify-self: stretch;
+            border-radius: 25px;
+            padding: 1rem;
+            font-size: 1.6rem;
+            background-color: $color-grey-light-2;
+            border: none;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        input {
+            height: 5rem;
+        }
+    }
+
+    &__list {
+        list-style: none;
+        display: grid;
+        grid-gap: 5rem;
+        align-content: flex-start;
+        align-items: center;
+
+        span {
+            margin-left: 1rem;
+        }
+    }
+
+    i {
+        font-size: 3.5rem;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: $color-primary;
+        font-size: 2rem;
+        transition: 0.2s;
+    }
+    a:hover,
+    a:active {
+        color: grey;
+    }
 }

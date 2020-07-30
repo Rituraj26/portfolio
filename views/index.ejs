@@ -568,30 +568,37 @@
         <section class="contact" id="contact">
             <h2 class="heading-2 title mb-sm">Contact</h2>
             <div class="underline mb-sm">&mdash;</div>
+
+            <form class="contact__form" action="/contact" method="POST">
+                <input name="contactName" type="text" placeholder="Name" />
+                <input name="contactEmail" type="email" placeholder="Email" />
+                <input name="contactSub" type="text" placeholder="Subject" />
+                <textarea name="contactMessage"></textarea>
+                <button class="projects__btn" type="submit">Send</button>
+            </form>
+
             <ul class="contact__list">
                 <li>
                     <a
                         href="https://www.instagram.com/rituraj265/"
                         target="_blank"
-                        ><i class="fab fa-instagram"></i
-                    ></a>
+                        ><i class="fab fa-instagram"></i>
+                        <span>ON INSTAGRAM</span>
+                    </a>
                 </li>
                 <li>
                     <a href="https://twitter.com/rituraj265" target="_blank"
-                        ><i class="fab fa-twitter"></i
-                    ></a>
+                        ><i class="fab fa-twitter"></i>
+                        <span>ON TWITTER</span>
+                    </a>
                 </li>
                 <li>
                     <a
                         href="https://www.linkedin.com/in/rituraj-dutta-7619a2181/"
                         target="_blank"
-                        ><i class="fab fa-linkedin"></i
-                    ></a>
-                </li>
-                <li>
-                    <a href="mailto:riturajguwahati26@gmail.com" target="_blank"
-                        ><i class="far fa-envelope"></i
-                    ></a>
+                        ><i class="fab fa-linkedin"></i>
+                        <span>ON LINKEDIN</span>
+                    </a>
                 </li>
             </ul>
         </section>

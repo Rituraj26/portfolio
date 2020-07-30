@@ -116,7 +116,7 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  color: #53483c;
+  color: #252422;
   font-weight: 300;
   line-height: 1.6; }
 
@@ -192,7 +192,7 @@ body {
   text-transform: uppercase;
   font-size: 1.5rem;
   padding: 1.3rem 2rem;
-  border: 1px solid #53483c;
+  border: 1px solid #252422;
   text-decoration: none;
   text-align: center;
   transition: 0.2s; }
@@ -335,7 +335,7 @@ body {
     padding: 0 10vw;
     display: grid;
     grid-template-columns: repeat(5, 12vw);
-    grid-gap: 5vw; }
+    grid-gap: 3vw; }
     @media only screen and (max-width: 50em) {
       .skills__grid {
         grid-template-columns: repeat(2, 35vw); } }
@@ -544,23 +544,50 @@ body {
   width: 100%;
   padding: 25rem 0;
   display: grid;
-  grid-row-gap: 5rem;
-  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 6rem;
   justify-items: center; }
   @media only screen and (max-width: 28.125em) {
     .contact {
-      padding: 10rem 0; } }
+      padding: 10rem 0;
+      grid-template-columns: max-content;
+      justify-content: center;
+      grid-gap: 5rem; } }
+  .contact__form {
+    display: grid;
+    grid-gap: 3rem;
+    padding: 0 20%; }
+    @media only screen and (max-width: 28.125em) {
+      .contact__form {
+        padding: 0% 10%; } }
+    .contact__form input,
+    .contact__form textarea {
+      border-radius: 25px;
+      padding: 1rem;
+      font-size: 1.6rem;
+      background-color: rgba(243, 240, 240, 0.863);
+      border: none;
+      font-family: Verdana, Geneva, Tahoma, sans-serif; }
+    .contact__form input {
+      height: 5rem; }
   .contact__list {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, min-content);
-    grid-gap: 3rem; }
-  .contact a:link, .contact a:visited {
+    grid-gap: 5rem;
+    align-content: flex-start;
+    align-items: center; }
+    .contact__list span {
+      margin-left: 1rem; }
+  .contact i {
+    font-size: 3.5rem; }
+  .contact a:link,
+  .contact a:visited {
     text-decoration: none;
-    color: #10442f;
-    font-size: 3rem;
-    transition: .2s; }
-  .contact a:hover, .contact a:active {
+    color: #0886ad;
+    font-size: 2rem;
+    transition: 0.2s; }
+  .contact a:hover,
+  .contact a:active {
     color: grey; }
 
 .credit {

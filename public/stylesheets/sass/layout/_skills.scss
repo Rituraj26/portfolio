@@ -12,7 +12,7 @@
         padding: 0 10vw;
         display: grid;
         grid-template-columns: repeat(5, 12vw);
-        grid-gap: 5vw;
+        grid-gap: 3vw;
 
         @media only screen and (max-width: $bp-medium) {
             grid-template-columns: repeat(2, 35vw);

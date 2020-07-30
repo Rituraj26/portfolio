@@ -45,7 +45,6 @@ sr.reveal(skills, {
     },
 });
 
-console.log(title, underline, typeof title);
 for (let i = 0; i < title.length; i++) {
     sr.reveal(title[i], {
         duration: 2000,
