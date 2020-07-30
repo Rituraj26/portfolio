@@ -11,15 +11,15 @@ const contactList = document.querySelector('.contact__list');
 
 window.sr = ScrollReveal();
 
-sr.reveal(navbar, {
-    duration: 2000,
-    origin: 'bottom',
-});
-sr.reveal(headerContent, {
-    duration: 2000,
-    origin: 'bottom',
-    distance: '10rem',
-});
+// sr.reveal(navbar, {
+//     duration: 2000,
+//     origin: 'bottom',
+// });
+// sr.reveal(headerContent, {
+//     duration: 2000,
+//     origin: 'bottom',
+//     distance: '10rem',
+// });
 sr.reveal(aboutImg, {
     duration: 2000,
     origin: 'bottom',
