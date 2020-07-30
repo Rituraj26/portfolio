@@ -1,5 +1,5 @@
 {
-    "name": "portfolio",
+    "name": "rituraj265",
     "version": "1.0.0",
     "description": "Rituraj Dutta Portfolio Website",
     "main": "app.js",
@@ -10,7 +10,7 @@
     "scripts": {
         "watch:sass": "node-sass ./public/stylesheets/sass/main.scss ./public/stylesheets/css/style.css -w",
         "devserver": "live-server --browser=firefox",
-        "start": "nodemon app.js --prefix npm run build:css -w",
+        "start": "node app.js",
         "compile:sass": "node-sass ./public/stylesheets/sass/main.scss ./public/stylesheets/css/style.comp.css",
         "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./public/stylesheets/css/style.comp.css -o ./public/stylesheets/css/style.prefix.css",
         "compress:css": "node-sass ./public/stylesheets/css/style.prefix.css ./public/stylesheets/css/style.css --output-style compressed",
