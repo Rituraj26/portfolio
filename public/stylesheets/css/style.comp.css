@@ -253,7 +253,7 @@ body {
     list-style: none; }
   .navbar__links {
     display: flex;
-    width: 30%;
+    width: 50%;
     justify-content: space-between; }
     @media only screen and (max-width: 62.5em) {
       .navbar__links {
@@ -267,13 +267,15 @@ body {
         .navbar__links li {
           padding: 3rem 6rem;
           border-bottom: 1px solid #a5a5a5; } }
-    .navbar__links a:link, .navbar__links a:visited {
+    .navbar__links a:link,
+    .navbar__links a:visited {
       text-decoration: none;
       color: #f9f7f6;
       font-size: 1.5rem;
       text-transform: uppercase;
-      transition: .1s; }
-    .navbar__links a:hover, .navbar__links a:active {
+      transition: 0.1s; }
+    .navbar__links a:hover,
+    .navbar__links a:active {
       border-bottom: 0.1rem solid #0886ad; }
 
 .burger {
@@ -595,38 +597,6 @@ body {
   .contact a:hover,
   .contact a:active {
     color: grey; }
-
-.credit {
-  grid-column: full-start / full-end;
-  background-color: #1c1c1c;
-  width: 100%;
-  padding: 10rem 3rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 5rem;
-  justify-items: center; }
-  @media only screen and (max-width: 37.5em) {
-    .credit {
-      display: none; } }
-  .credit div {
-    display: grid;
-    grid-row-gap: 3rem;
-    align-content: start;
-    color: rgba(243, 240, 240, 0.863); }
-    .credit div p {
-      font-size: 1.5rem; }
-      .credit div p span {
-        display: block;
-        text-decoration: italic; }
-    .credit div a:link, .credit div a:visited {
-      text-decoration: none;
-      color: rgba(243, 240, 240, 0.863);
-      font-size: 1.5rem;
-      transition: .1s; }
-      .credit div a:link i, .credit div a:visited i {
-        margin-right: 2rem; }
-    .credit div a:hover, .credit div a:active {
-      color: #f9f7f6; }
 
 .footer {
   grid-column: full-start / full-end;

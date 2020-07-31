@@ -10,6 +10,7 @@
     "scripts": {
         "watch:sass": "node-sass ./public/stylesheets/sass/main.scss ./public/stylesheets/css/style.css -w",
         "devserver": "live-server --browser=firefox",
+        "dev": "npm-run-all --parallel devserver watch:sass",
         "start": "node app.js",
         "compile:sass": "node-sass ./public/stylesheets/sass/main.scss ./public/stylesheets/css/style.comp.css",
         "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' ./public/stylesheets/css/style.comp.css -o ./public/stylesheets/css/style.prefix.css",

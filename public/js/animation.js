@@ -7,7 +7,7 @@ const aboutPara = document.querySelector('.about__paragraph');
 
 const service = document.querySelectorAll('.service');
 // const projectShape = document.querySelectorAll('.project__shape');
-const contactList = document.querySelector('.contact__list');
+// const contactList = document.querySelector('.contact__list');
 
 window.sr = ScrollReveal();
 
@@ -29,10 +29,10 @@ sr.reveal(aboutPara, {
     duration: 2000,
     origin: 'bottom',
 });
-sr.reveal(contactList, {
-    duration: 4000,
-    origin: 'bottom',
-});
+// sr.reveal(contactList, {
+//     duration: 4000,
+//     origin: 'bottom',
+// });
 
 sr.reveal(skills, {
     viewFactor: 0.2,
